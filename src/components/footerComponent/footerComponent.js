@@ -1,6 +1,6 @@
 import React from "react";
 import { Row, Col } from "react-bootstrap";
-import "./footer.css";
+import "./footer.scss";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -72,7 +72,7 @@ function Footer() {
             <ul className="noheadline">
               <li>
                 {" "}
-                <Link to=""></Link>Home
+                <Link to="">Home</Link>
               </li>
               <li>
                 <Link to="/notfound">Jewelry</Link>

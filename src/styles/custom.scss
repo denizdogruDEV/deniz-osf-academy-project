@@ -5,3 +5,19 @@ body {
     font-family: "Lato", sans-serif;
     color: #45413e;
   }
+
+  h5 {
+    font-size: 13px;
+  
+    &.headline {
+      font-weight: bold;
+    }
+  }
+
+  a:hover {
+    text-decoration: none;
+  }
+  
+  ul li a:hover {
+    color: #84bc22;
+  }
