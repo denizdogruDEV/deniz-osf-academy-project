@@ -105,11 +105,35 @@ body {
   }
 
   //404 page
-  
+
   .form-control {
     border: none;
     &:focus {
       border-color: #84bc22;
       box-shadow: none;
+    }
+  }
+
+  //release page
+
+  path {
+    stroke:#84bc22;
+  }
+
+  .button-submission {
+    background-color: white;
+    border-color: lightgray;
+    border-radius: 50%;
+    padding: 5px 10px 5px 10px;
+    color: #84bc22;
+    &:hover {
+      background-color: #84bc22;
+      border-color: #84bc22;
+      color: white;
+    }
+    &:focus {
+      background-color: #84bc22;
+      border-color: #84bc22;
+      color: white;
     }
   }

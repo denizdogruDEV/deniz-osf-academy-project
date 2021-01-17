@@ -1,0 +1,58 @@
+.gray-bg {
+    background-color: #f1edea;
+    padding-top: 10px;
+  }
+  
+  .white-bg {
+    background-color: white;
+    margin-top: 100px;
+  }
+  
+  //text
+
+  h1.countdown-headline {
+    font-size: 2rem;
+    text-align: center;
+    text-transform: initial;
+    font-weight: bold;
+  }
+
+.countdown-text {
+    text-align: center;
+    margin-bottom: 70px;
+}
+div.discount-text {
+    justify-content: center;
+}
+
+//countdown comp
+
+div.countdown-wrapper {
+    width: 100%;
+    margin-bottom: 70px;
+  }
+
+  .countdown-text {
+    width: 500px;
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+//submission button
+
+  .email-submission {
+    display: flex;
+    flex-direction: row;
+    border: 1px lightgray solid;
+    padding: 8px 10px 8px 8px;
+    border-radius: 20px;
+    width: 400px;
+    margin-left: 32%;
+    margin-top: 30px;
+  }
+
+.countdown-item {
+    font-weight: bold;
+}
