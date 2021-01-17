@@ -4,6 +4,7 @@ import CarouselComp from "../../components/carouselComp/carouselComp";
 import discountimg from "../../assets/images/55img.jpg";
 import { FaFacebookF } from "react-icons/fa";
 import CookieComp from "../../components/cookieComp/cookieComp";
+import "./homePage.scss"
 
 function Homepage() {
     return (

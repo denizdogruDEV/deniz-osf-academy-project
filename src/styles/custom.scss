@@ -1,6 +1,8 @@
 @import "node_modules/bootstrap/scss/bootstrap";
 @import "~react-image-gallery/styles/scss/image-gallery.scss";
 
+//i used this custom.scss file to overwrite bootstrap classes
+
 body {
     font-family: "Lato", sans-serif;
     color: #45413e;
@@ -28,7 +30,8 @@ body {
     text-transform: uppercase;
   }
   
-  //for carousel comp (overwrite bootstrap classes)
+  //for carousel comp 
+
   .carousel-indicators {
     li {
       border-radius: 50%;
@@ -46,4 +49,67 @@ body {
   .carousel-control-prev,
   .carousel-control-next {
     display: none;
+  }
+
+
+  //discount card
+
+  .facebook-button {
+    color: #3a5b96;
+    border-color: #3a5b96;
+  
+    &:hover {
+      background-color: #3a5b96;
+      color: white;
+    }
+  }
+  .button-icons {
+    margin-right: 15px;
+  }
+
+//cookie
+
+  .CookieConsent {
+    width: 70% !important;
+    left: 15% !important;
+    align-items: center !important;
+    h4 {
+      color: #84bc22;
+      font-size: 1rem;
+      font-weight: 900;
+    }
+    p {
+      color: darkgray;
+      font-size: 0.9rem;
+    }
+    span {
+      color: #84bc22;
+    }
+    button#rcc-confirm-button {
+      padding-left: 30px !important;
+      padding-right: 30px !important;
+      border-radius: 20px !important;
+    }
+    .div {
+      padding-right: 30px;
+    }
+  }
+  @media (max-width: 550px) {
+    .CookieConsent {
+      width: 100% !important;
+      left: 0 !important;
+    }
+    p {
+      margin-bottom: -20px;
+    }
+  }
+
+  //404 page
+  
+  .form-control {
+    border: none;
+    &:focus {
+      border-color: #84bc22;
+      box-shadow: none;
+    }
   }
