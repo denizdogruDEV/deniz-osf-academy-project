@@ -39,6 +39,10 @@ div.countdown-wrapper {
     margin-left: auto;
     margin-right: auto;
   }
+
+  .countdown-item {
+    font-weight: bold;
+}
   
 //submission button
 
@@ -46,13 +50,10 @@ div.countdown-wrapper {
     display: flex;
     flex-direction: row;
     border: 1px lightgray solid;
-    padding: 8px 10px 8px 8px;
-    border-radius: 20px;
+    padding: 5px 5px 5px 5px;
+    border-radius: 50px;
     width: 400px;
     margin-left: 32%;
     margin-top: 30px;
   }
 
-.countdown-item {
-    font-weight: bold;
-}
