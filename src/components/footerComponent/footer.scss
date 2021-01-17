@@ -20,7 +20,7 @@ div.footercontainer {
 
 
 .footercontainer ul li a {
-  color: black;
+  color: gray;
 }
 
 .footer-icons {
@@ -47,4 +47,8 @@ h5.mail-link {
   &:hover {
     color: #84bc22;
   }
+}
+
+.strong {
+  font-weight: bold
 }
