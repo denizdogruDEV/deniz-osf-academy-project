@@ -11,7 +11,10 @@
     "@testing-library/react": "^11.2.2",
     "@testing-library/user-event": "^12.6.0",
 <<<<<<< HEAD
+<<<<<<< HEAD
     "bootstrap": "^4.5.3",
+=======
+>>>>>>> parent of 58c47a8... bootstrap install
 =======
 >>>>>>> parent of 58c47a8... bootstrap install
     "react": "^17.0.1",
@@ -44,10 +47,13 @@
       "last 1 safari version"
     ]
 <<<<<<< HEAD
+<<<<<<< HEAD
   },
   "devDependencies": {
     "gulp": "^4.0.2",
     "sass": "^1.32.4"
+=======
+>>>>>>> parent of 58c47a8... bootstrap install
 =======
 >>>>>>> parent of 58c47a8... bootstrap install
   }
