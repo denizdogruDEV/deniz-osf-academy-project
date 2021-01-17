@@ -1,5 +1,5 @@
 import React from "react";
-import { Row, Col } from "react-bootstrap";
+import { Row, Col, Container } from "react-bootstrap";
 import "./footer.scss";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -11,6 +11,7 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 
 function Footer() {
+ 
   const Mailto = ({ email, subject, body, children }) => {
     return (
       <a
@@ -23,7 +24,9 @@ function Footer() {
     );
   };
   return (
-    <footer>
+  
+    <Container>
+    
       <div className="footercontainer">
         <Row>
           <Col lg="2" md="6" xs="12">
@@ -172,7 +175,10 @@ function Footer() {
           </Col>
         </Row>
       </div>
-    </footer>
+   
+    </Container>
+ 
+  
   );
 }
 
