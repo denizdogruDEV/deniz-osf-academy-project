@@ -16,7 +16,8 @@ export default function Release() {
                 We Will Release OSF Academy
               </h1>       
               <p>
-                We are working hard and estimated release time products below.
+                We are working hard and estimated release time products below.</p>
+                <p>
                 Sed ac tristique nunc, ut gravida nunc. Nulla consequat erat non
                 lectus imper
               </p>{" "}
