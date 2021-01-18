@@ -1,0 +1,48 @@
+.hover-buttons {
+  transition: 0.5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+.text {
+  background-color: #4caf50;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+}
+.card.green-hover {
+  height: 360px;
+  &:hover {
+    &:after {
+      position: absolute;
+      content: "";
+      height: 100%;
+      width: 100%;
+      top: 0;
+      left: 0;
+      background: #32c777;
+      opacity: 0.7;
+    }
+    .hover-buttons {
+      opacity: 1;
+      display: flex;
+      background-color: none;
+      z-index: 55;
+    }
+  }
+  .card-body {
+    height: 140px;
+  }
+}
+
+img.final-card {
+  height: 363px;
+}
+
+.popular-item-images {
+  height: 240px;
+}

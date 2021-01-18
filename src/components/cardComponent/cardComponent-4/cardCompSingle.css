@@ -1,0 +1,20 @@
+div.dual-button {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+}
+
+.product-card-single {
+  height: 360px;
+}
+
+h5.green-text {
+  color: #84bc22;
+  font-size: 0.9rem;
+}
+.half-text {
+  width: 100px;
+  border-radius: 10px 0px 0px 10px;
+  border: gray 1px solid;
+  padding: 5px 10px 5px 10px;
+}

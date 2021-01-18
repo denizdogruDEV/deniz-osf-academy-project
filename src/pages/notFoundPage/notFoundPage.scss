@@ -19,17 +19,18 @@ ol.breadcrumb {
     justify-content: center;
   }
 
-  h1.fourofour {
+  h1.stripe-headline {
     overflow: hidden;
     text-align: center;
     color: #45413e;
     font-size: 3rem;
     font-weight: 900;
     margin-bottom: 50px;
+    margin-top: 50px;
   }
   
-  .fourofour:before,
-  .fourofour:after {
+  .stripe-headline:before,
+  .stripe-headline:after {
     background-color: black;
     content: "";
     display: inline-block;
@@ -39,13 +40,13 @@ ol.breadcrumb {
     width: 50%;
   }
   
-  .fourofour:before {
+  .stripe-headline:before {
     right: 0.5em;
     margin-left: -50%;
     opacity: 0.3;
   }
   
-  .fourofour:after {
+  .stripe-headline:after {
     left: 0.5em;
     margin-right: -50%;
     opacity: 0.3;

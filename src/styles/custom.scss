@@ -30,7 +30,7 @@ body {
     text-transform: uppercase;
   }
   
-  //for carousel comp 
+  //for carousel comp -  homepage slider
 
   .carousel-indicators {
     li {
@@ -52,7 +52,7 @@ body {
   }
 
 
-  //discount card
+  //discount card -homepage
 
   .facebook-button {
     color: #3a5b96;
@@ -104,6 +104,7 @@ body {
     }
   }
 
+
   //404 page
 
   .form-control {
@@ -113,6 +114,54 @@ body {
       box-shadow: none;
     }
   }
+  h1.stripe-headline {
+    overflow: hidden;
+    text-align: center;
+    color: #45413e;
+    font-size: 3rem;
+    font-weight: 900;
+    margin-bottom: 50px;
+    margin-top: 50px;
+  }
+  
+  .stripe-headline:before,
+  .stripe-headline:after {
+    background-color: black;
+    content: "";
+    display: inline-block;
+    height: 1px;
+    position: relative;
+    vertical-align: middle;
+    width: 50%;
+  }
+  
+  .stripe-headline:before {
+    right: 1em;
+    margin-left: -50%;
+    opacity: 0.3;
+  }
+  
+  .stripe-headline:after {
+    left: 1em;
+    margin-right: -50%;
+    opacity: 0.3;
+  }
+
+  //popular items - homepage
+
+
+    .stripe-headline.white-headline:before,
+  .stripe-headline.white-headline:after {
+    background-color:white; width: 39%;
+  }
+  h2.white-headline {
+    color: white;
+    font-size: 2em;
+   padding-top: 50px;
+   font-weight: bold;
+
+  }
+
 
   //release page
 
@@ -141,20 +190,23 @@ body {
 //navbar
 
 .navbar {
-  border-bottom: 3px solid #f3f0eb ;
-  background: white;
   height: 70px;
-  ;
+ 
 }
 .dropdown-background {
   background: white;
   width:100%; 
   position: fixed;
   z-index: 100;
-  top: 0 
+  top: 0 ;
+  border-bottom:3px solid #f3f0eb;
 }
 .nav-link:hover {
   background: #262a32;
+    box-shadow: 0px 5px #84bc22 ;
+    box-sizing: border-box;
+   -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box
 }
 a.nav-link {
   color: gray;
@@ -162,24 +214,22 @@ a.nav-link {
 }
 a.nav-link:hover {
   color:white;
+
 }
 .dropdown-menu.show {
  border: none;
  padding: 0px;
 }
-a#collasible-nav-dropdown{
-  padding-bottom: 3px;
- &:hover {
-   border-bottom: 5px solid #84bc22;
- }
-}
-a.nav-link {
-  padding-bottom: 30px;
-  margin-bottom: -16px;
+.nav-link {
+  padding-bottom: 25px;
+  padding-top:20px;
   font-weight: 600;
  &:hover {
    color:white;
-  border-bottom: 5px solid #84bc22;
+    box-shadow: 0px 4px #84bc22 ;
+    box-sizing: border-box;
+   -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box
 }}
 .brand-first {
   font-weight: 900;
@@ -197,17 +247,17 @@ a.nav-link {
 }
 .dropdown-menu {
   background-color: #262a32;
+
 }
 a.dropdown-item {
   color: white;
+  
   &:hover {
     background: #84bc22;
     color:black;
   }
 }
-.dropdown-box {
-  top: 0%;
-}
+
 .navbar-icon-set {
   padding-left: 30px;
 } 
@@ -229,11 +279,7 @@ button.btn.btn-secondary.disabled {
   .navbar-collapse{
     padding:10px;
 }
-.bdDYJz .navbar-icon-set{
-    display:inline-block;
-    width: 25%;
-    margin-top: 10px;
-}
+
 .dropdown-menu{
     width:100%;
 }
@@ -253,10 +299,10 @@ button.btn.btn-secondary.disabled {
 .dropdown-box {
   padding: 40px;
   width: 100vw;
-  left:-37vw;
+ left:-38.5vw;
   position: absolute;
   background-color: #262a32;
-margin-top: 10px
+  margin-top:4px;
 
 }
 h4 {
@@ -270,9 +316,13 @@ li {
   font-size: 1rem;
 }
 img {
-  border-radius: 3%;
+  border-radius: 10px;
 }
 .no-category {
   margin-top: 25px;
+}
+
+.dropdown-item {
+  top:5%;
 }
 

@@ -19,7 +19,7 @@ function NotFound() {
               <Breadcrumb.Item active>404</Breadcrumb.Item>
             </Breadcrumb>
           </div>
-          <h1 className="fourofour">404</h1>
+          <h1 className="stripe-headline">404</h1>
         </Container>
         <Container>
           <div className="white-bg">

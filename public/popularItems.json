@@ -1,0 +1,24 @@
+[
+    {
+        "image": "/items/item-1.jpg",
+        "maintitle": "Kristina Dam Oak Table With White Marble Top",
+        "subtitle": "$ 799.55"
+        },
+    
+    {
+        "image": "/items/item-2.jpg",
+        "maintitle": "EAMES x Cast + Crew - Custom Powder Coated",
+        "subtitle": "$ 799.55"    
+        },
+    {
+        "image": "/items/item-3.jpg",
+        "maintitle": "Activate Facial Mask and Charcoal Soap",
+        "subtitle": "$ 129.55"
+        },
+    
+    {
+        "image": "/items/item-4.jpg",
+        "maintitle": "itra Cork Stool B, Cork - Design Within Reach",
+        "subtitle": "$ 299.99"    
+        }
+]

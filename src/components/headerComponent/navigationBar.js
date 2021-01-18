@@ -19,6 +19,8 @@ import MyVerticallyCenteredModal from "./loginModal/loginModalComp";
 
 export default function Navigationbar() {
     const [modalShow, setModalShow] = React.useState(false);
+ 
+  
   
     return (
       
@@ -45,18 +47,21 @@ export default function Navigationbar() {
                 id="responsive-navbar-nav"
                 className="justify-content-end"
               >
-                <NavDropdown title="SERVICES" renderMenuOnMount={true}>
+               <NavDropdown onMouseEnter={(e) => document.getElementById("services-menu").click()} onMouseLeave={(e) => document.getElementById("services-menu").click()} title="SERVICES" id="services-menu">
                   <DropdownComp />
                 </NavDropdown>
                 <Nav.Link href="/notfound">COMPANY</Nav.Link>
                 <Nav.Link href="/notfound">LIBRARY</Nav.Link>
-                <Nav.Link href="/notfound">CONTACT US</Nav.Link>
-                <NavDropdown title="EN" renderMenuOnMount={true}>
+                <Nav.Link href="/notfound">CONTACT US</Nav.Link> 
+                <NavDropdown onMouseEnter={(e) => document.getElementById("en-menu").click()} onMouseLeave={(e) => document.getElementById("en-menu").click()} title="EN" id="en-menu">
+
+
                   <NavDropdown.Item href="#action/3.1">TR</NavDropdown.Item>
                   <NavDropdown.Item href="#action/3.2">EN</NavDropdown.Item>
                   <NavDropdown.Item href="#action/3.3">UA</NavDropdown.Item>
                 </NavDropdown>
-                <NavDropdown title="$ US" renderMenuOnMount={true}>
+                <NavDropdown onMouseEnter={(e) => document.getElementById("us-menu").click()} onMouseLeave={(e) => document.getElementById("us-menu").click()} title="$ US" id="us-menu">
+               
                   <NavDropdown.Item href="#action/3.1">$ TR</NavDropdown.Item>
                   <NavDropdown.Item href="#action/3.2">$ US</NavDropdown.Item>
                   <NavDropdown.Item href="#action/3.3">₴ UA</NavDropdown.Item>

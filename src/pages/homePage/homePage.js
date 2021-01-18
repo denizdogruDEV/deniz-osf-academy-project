@@ -42,6 +42,27 @@ function Homepage() {
         </div>
       </Container>
 
+      <div className="darkbackground">
+        <Container>
+          <div className="title">
+            <h2 className="stripe-headline white-headline">Popular Items</h2>
+          </div>
+          <div className="card-gallery">
+           
+          </div>
+        </Container>
+      </div>
+      <Container fluid className="bannerosf">
+        <div className="bannerosf-text">
+          <h1 className="bannerosf-text">Banner OSF Themes</h1>
+          <h3 className="bannerosf-text">
+            Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+            accusantium
+          </h3>
+        </div>
+      </Container>
+      <div className="darkbackground"></div>
+
         </>
         );
 }
