@@ -114,6 +114,10 @@ body {
       box-shadow: none;
     }
   }
+
+  h2.stripe-headline {
+    margin-bottom: 50px;
+  }
   h1.stripe-headline {
     overflow: hidden;
     text-align: center;
@@ -150,17 +154,24 @@ body {
   //popular items - homepage
 
 
-    .stripe-headline.white-headline:before,
+  .stripe-headline.white-headline:before,
   .stripe-headline.white-headline:after {
     background-color:white; width: 39%;
   }
   h2.white-headline {
     color: white;
-    font-size: 2em;
+    font-size: 1.5em;
    padding-top: 50px;
    font-weight: bold;
 
   }
+
+h1.white-headline {
+  color: white;
+  text-align: center;
+  font-size: 2em;
+  font-weight: bold;
+}
 
 
   //release page
@@ -315,7 +326,7 @@ li {
   color: white;
   font-size: 1rem;
 }
-img {
+img.d-block.w-100 {
   border-radius: 10px;
 }
 .no-category {
@@ -326,3 +337,126 @@ img {
   top:5%;
 }
 
+
+
+//cards
+a.half-button.btn.btn-primary {
+  background: none;
+  padding: 8px 8px 5px 12px;
+  margin: 0;
+  left: 0;
+  display: flex;
+  color: gray;
+  border-radius: 0px 10px 10px 0px;
+  border-color: gray;
+  border-left: none;
+  width: 100px;
+  position: sticky;
+  &:focus {
+    box-shadow: none;
+  }
+  &:hover {
+    background-color: #24c36c;
+    color: white;
+  }
+}
+
+div.dual-button {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  width: 200px;
+}
+.half-text {
+  width: 100px;
+  border-radius: 10px 0px 0px 10px;
+  border: gray 1px solid;
+  padding: 10px 10px 5px 10px;
+  text-align: center;
+  color: #24c36c;
+}
+
+img .card-img {
+  object-fit: cover;
+}
+
+.card {
+  border: none;
+  margin-bottom: 20px;
+}
+
+div.card-title.h5 {
+  text-align: center;
+  font-size: 1rem;
+}
+p.card-text {
+  text-align: center;
+  font-size: 0.9rem
+}
+img.card-img-top.featured-card-images {
+  object-fit: cover;
+  height: 200px;
+}
+
+.card.green-hover {
+  
+  &:hover {
+    &:after {
+      position: absolute;
+      content: "";
+      height: 100%;
+      width: 100%;
+      top: 0;
+      left: 0;
+      background: #32c777;
+      border-radius: 3px;
+      opacity: 0.7;
+    }
+    .hover-buttons {
+      opacity: 1;
+      display: flex;
+      background-color: rgba(255, 0, 0, 0);
+      z-index: 55;
+    }
+  }
+}
+
+button.add-buttons {
+  background-color: white;
+  color: black;
+  border-color: white;
+  &:hover {
+    background-color: black;
+    border-color: white;
+  }
+}
+
+button.add-buttons.red.btn.btn-primary {
+  color: red;
+  border-color: none;
+
+  &:hover {
+    background-color: red;
+    color: white;
+    border-color: white;
+  }
+}
+
+button.green.add-to-cart.btn.btn-primary {
+  padding: 10px 15px 10px 15px;
+  text-align: center;
+  margin-left: 20px;
+}
+
+.service-cards {
+  height: 330px !important;
+}
+
+.popular-image-card {
+  height: 250px;
+  object-fit: cover;
+}
+
+.double-line {
+  margin-bottom: 0px;
+}

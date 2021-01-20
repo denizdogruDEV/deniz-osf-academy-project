@@ -39,10 +39,7 @@ div.followtext {
 }
 
 
-h2.stripe-headline-white {
-  font-size: 1.5rem;
-  color: white;
-}
+
 
 .bannerosf {
   background-image: url(../../assets/images/osfbanner.jpg);
@@ -52,11 +49,13 @@ h2.stripe-headline-white {
   overflow: hidden;
 }
 
+
 h1.bannerosf-text {
   color: white;
   text-align: center;
   font-weight: 900;
   margin-top: 10vw;
+  font-size: 3em;
 }
 h3.bannerosf-text {
   color: white;
@@ -64,4 +63,32 @@ h3.bannerosf-text {
   font-weight: 400;
   font-size: 1rem;
   margin-top: 30px;
+
+
 }
+
+
+//logo banner
+
+.logo-banner {
+ display: flex;
+  align-items: center;
+justify-content: center;
+h2 {
+  color: white;
+  font-size: 1.2rem;
+  font-weight:  bold;
+}
+p {
+  color: gray;
+}
+  }
+  .banner-text-logo {
+ margin-left: 30px;
+ padding-right: -100px;
+  padding-top: 30px;
+   padding-bottom: 30px;
+  }
+  .graybackground {
+    background-color:rgb(53, 53, 53);
+  }

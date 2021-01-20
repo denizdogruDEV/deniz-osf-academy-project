@@ -14,21 +14,20 @@ class CardCompSingle extends React.Component {
       <Col lg="3" md="6">
         <Card className="product-card-single">
           <Card.Img
-            className="popular-item-images"
+            className="
+            popular-image-card"
             src={require("../../../../public/items/" + image + ".jpg")}
           />
           <Card.Body>
             <Card.Title>{maintitle}</Card.Title>
             <div className="hover-buttons">
-              <div className="text-hoverbutton">
-                <Button>
+                <Button className="add-buttons">
                   <FontAwesomeIcon icon={faPlus} />{" "}
                 </Button>
-                <Button className="red">
+                <Button className="add-buttons red">
                   <FontAwesomeIcon icon={faHeart} />
                 </Button>
               </div>
-            </div>
             <div className="dual-button">
               <div className="half-text">
                 <h5 className="green-text">$659.55</h5>

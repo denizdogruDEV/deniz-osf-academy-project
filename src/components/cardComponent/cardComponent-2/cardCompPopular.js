@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Card from "react-bootstrap/Card";
-import { Col, Button, Container } from "react-bootstrap";
+import { Col, Button, Container,Row } from "react-bootstrap";
 import "./cardCompPopular.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPlus, faHeart } from "@fortawesome/free-solid-svg-icons";
@@ -21,11 +21,13 @@ const PopularLoadMore = () => {
       .then((data) => setitems(data));
   }, []);
   return (
-    <div className="service-cards-container">
+    <div>
+      <Row>
+
       {items.slice(0, visible).map((item) => (
         <Col lg="3" md="6">
           <Card className="green-hover">
-            <Card.Img src={item.image} />
+            <Card.Img className="popular-image-card" src={item.image} />
             <Card.Body>
               <Card.Title>{item.maintitle}</Card.Title>
               <Card.Text>{item.subtitle}</Card.Text>
@@ -41,6 +43,7 @@ const PopularLoadMore = () => {
           </Card>
         </Col>
       ))}
+      </Row>
       <div className="justify-center-buttons">
         {visible < items.length && (
           <Button variant="success" onClick={showMoreItems}>

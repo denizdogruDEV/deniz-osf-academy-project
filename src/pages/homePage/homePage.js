@@ -5,6 +5,9 @@ import discountimg from "../../assets/images/55img.jpg";
 import { FaFacebookF } from "react-icons/fa";
 import CookieComp from "../../components/cookieComp/cookieComp";
 import "./homePage.scss"
+import CardComp from "../../components/cardComponent/cardComponent";
+import LogoBanner from "../../components/logoBanner/logoBanner";
+import FeaturedSlider from "../../components/featuredProductsComp/featuredProductsCompArray";
 
 function Homepage() {
     return (
@@ -48,21 +51,30 @@ function Homepage() {
             <h2 className="stripe-headline white-headline">Popular Items</h2>
           </div>
           <div className="card-gallery">
-           
+          <CardComp />
           </div>
         </Container>
       </div>
       <Container fluid className="bannerosf">
         <div className="bannerosf-text">
           <h1 className="bannerosf-text">Banner OSF Themes</h1>
+         
           <h3 className="bannerosf-text">
             Sed ut perspiciatis unde omnis iste natus error sit voluptatem
             accusantium
           </h3>
+          
         </div>
       </Container>
-      <div className="darkbackground"></div>
-
+      <div className="darkbackground">
+        <Container>
+          <FeaturedSlider />
+        </Container>
+      </div>
+      <div></div>
+      <div className="graybackground">
+        <LogoBanner />
+      </div>
         </>
         );
 }

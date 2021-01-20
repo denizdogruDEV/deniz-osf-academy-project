@@ -4,10 +4,11 @@ import { Row, Col, Button } from "react-bootstrap";
 import popularitemb from "../../assets/images/popular-items/popular-item-2.jpg";
 import popularitemd from "../../assets/images/popular-items/popular-item-4.jpg";
 import CardCompItem from "./cardcompItem";
-import "./cardComponent.css";
 import PopularLoadMore from "./cardComponent-2/cardCompPopular";
 import CardCompStatic from "./cardComponent-3/cardCompStatic";
 import CardCompSingle from "./cardComponent-4/cardCompSingle";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faPlus, faHeart } from "@fortawesome/free-solid-svg-icons";
 
 //this component is a parent component for homepage popular items
 
@@ -32,16 +33,19 @@ function CardComp() {
           image="3"
         />
         <Col lg="3" md="6" className="item-hover">
-          <Card>
-            <Card.Img variant="top" src={popularitemd} />
-            <Card.Body style={{ height: "114px" }}>
-              <Card.Title>Cocktail Table Walnut </Card.Title>
+          <Card classname="green-hover">
+            <Card.Img src={popularitemd} className="popular-image-card" />
+            <Card.Body>
+              <Card.Title className="double-line">Cocktail Table Walnut </Card.Title>
               <Card.Title>| YES </Card.Title>
               <Card.Text>$ 299.99</Card.Text>
               <div className="hover-buttons">
-                <div className="text-hoverbutton">
-                  <Button>Add</Button>
-                </div>
+                <Button className="add-buttons">
+                  <FontAwesomeIcon icon={faPlus} />{" "}
+                </Button>
+                <Button className="add-buttons red">
+                  <FontAwesomeIcon icon={faHeart} />
+                </Button>
               </div>
             </Card.Body>
           </Card>
@@ -66,9 +70,9 @@ function CardComp() {
 
         <CardCompStatic image="static-item" />
       </Row>
-      <div className="load-more-pop">
+     
         <PopularLoadMore />
-      </div>
+  
     </>
   );
 }

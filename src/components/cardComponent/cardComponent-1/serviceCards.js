@@ -24,21 +24,13 @@ const ServiceCards = () => {
     <Container className="service-cards-container">
       {items.slice(0, visible).map((item) => (
         <Col lg="3" md="6">
-          <Card className="green-hover service-cards">
+          <Card className="service-cards">
             <Card.Img className="services-images" src={item.image} />
             <Card.Body className="services-cards-body">
               <Card.Title className="services-cards-headline">
                 {item.maintitle}
               </Card.Title>
               <Card.Text>{item.subtitle}</Card.Text>
-              <div className="hover-buttons">
-              <Button className="add-buttons">
-                <FontAwesomeIcon icon={faPlus} />{" "}
-              </Button>
-              <Button className="add-buttons red">
-                <FontAwesomeIcon icon={faHeart} />
-              </Button>
-            </div>
             </Card.Body>
           </Card>
         </Col>
