@@ -3,7 +3,7 @@ import Card from "react-bootstrap/Card";
 import { Col, Button, Container,Row } from "react-bootstrap";
 import "./cardCompPopular.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faPlus, faHeart } from "@fortawesome/free-solid-svg-icons";
+import { faPlus, faHeart, faRedoAlt } from "@fortawesome/free-solid-svg-icons";
 
 // this component has been used for popular items on homepage, for load more function
 
@@ -46,8 +46,9 @@ const PopularLoadMore = () => {
       </Row>
       <div className="justify-center-buttons">
         {visible < items.length && (
-          <Button variant="success" onClick={showMoreItems}>
+          <Button className="load-more" onClick={showMoreItems}>
             Load More
+            <FontAwesomeIcon icon={faRedoAlt} className="fa-rotate-270" />
           </Button>
         )}
       </div>
