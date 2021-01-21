@@ -92,22 +92,3 @@ p {
   .graybackground {
     background-color:rgb(53, 53, 53);
   }
-
-
-  button.load-more {
-    color: white;
-    background-color: #262a32;
-    border: 2px solid white;
-    border-radius: 20px;
-    padding: 10px 80px;
-    &:hover {
-      color: #262a32;
-      background-color: white;
-      border-color: white;
-    }
-  }
-
-  .fa-rotate-270 {
-    margin-left: 30px;
-    margin-right: -30px;
-  }
