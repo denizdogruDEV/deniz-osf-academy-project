@@ -460,3 +460,22 @@ button.green.add-to-cart.btn.btn-primary {
 .double-line {
   margin-bottom: 0px;
 }
+
+
+button.load {
+  background-color: #262a32;
+  border: 2px white solid;
+  border-radius: 30px;
+  padding: 10px 80px;
+  &:hover {
+    background-color: white;
+    color: #262a32;
+    border-color: white;
+  }
+
+}
+
+.svg-inline--fa {
+  margin-left: 30px;
+  margin-right: -30px;
+}

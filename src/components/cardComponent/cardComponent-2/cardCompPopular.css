@@ -35,3 +35,15 @@
     padding: 16px 32px;
   }
 }
+
+button.load {
+  background-color: #262a32;
+  border: 3px white solid;
+  border-radius: 30px;
+  &:hover {
+    background-color: white;
+    color: #262a32;
+    border-color: white;
+  }
+
+}
