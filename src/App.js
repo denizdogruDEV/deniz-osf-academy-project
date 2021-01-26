@@ -4,10 +4,11 @@ import "./App.css";
 import Home from "./pages/homePage/homePage";
 import Services from "./pages/servicesPage/servicesPage";
 import ProductDetail from "./pages/productDetailPage/productDetailPage";
+import Cart from "./pages/cartPage/cartPage";
 import NotFound from "./pages/notFoundPage/notFoundPage";
 import Release from "./pages/releasePage/releasePage";
-import Navbar from "./components/headerComponent/navigationBar"
-import Footer from "./components/footerComponent/footerComponent"
+import Navbar from "./components/headerComponent/navigationBar";
+import Footer from "./components/footerComponent/footerComponent";
 
 function App() {
   return (
@@ -19,7 +20,7 @@ function App() {
         <Route path="/productdetail" component={ProductDetail} />
         <Route path="/notfound" component={NotFound} />
         <Route path="/release" component={Release} />
-
+        <Route path="/cart" component={Cart} />
         <Footer />
       </div>
     </Router>
