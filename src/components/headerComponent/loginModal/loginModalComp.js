@@ -2,6 +2,7 @@ import React from "react";
 import { Button, Modal } from "react-bootstrap";
 import LoginFormComp from "./loginFormComp";
 import Form from "react-bootstrap/Form";
+import { useForm } from "react-hook-form";
 
 function MyVerticallyCenteredModal(props) {
   return (
@@ -18,7 +19,7 @@ function MyVerticallyCenteredModal(props) {
         </div>
       </Modal.Body>
       <div className="text-center login-button">
-        <Button className="green" onClick={props.onHide}>
+        <Button type="submit" variant="success" onClick={props.onHide}>
           Login
         </Button>
       </div>

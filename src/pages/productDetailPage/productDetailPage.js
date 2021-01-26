@@ -6,7 +6,8 @@ import MyGallery from "../../components/productimagegalleryComponent/imageGaller
 import "./productDetailPage.scss";
 import CardCompItem from "../../components/cardComponent/cardcompItem";
 import Form from "react-bootstrap/Form";
-import QuantityPicker  from "../../components/quantitiyComp/quantityComp";
+import QuantityPicker from "../../components/quantitiyComp/quantityComp";
+import LogoBanner from "../../components/logoBanner/logoBanner";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faFacebookF,
@@ -155,6 +156,9 @@ function ProductDetail() {
             />
           </Row>
         </Container>
+      </div>
+      <div className="graybackground">
+        <LogoBanner />
       </div>
     </>
   );

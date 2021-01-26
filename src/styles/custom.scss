@@ -111,7 +111,7 @@ ul li a:hover {
 
 //404 page
 
-.form-control {
+.subscribe-form {
   border: none;
   &:focus {
     border-color: #84bc22;
@@ -516,4 +516,53 @@ select.form-control {
     color: white;
     border-color: #262a32;
   }
+}
+
+//modal
+.login-button {
+  padding: 20px 0px 30px 0px;
+  .btn {
+    padding: 10px 60px;
+  }
+}
+
+p.green {
+  color: #84bc22;
+  margin-bottom: -1rem;
+}
+
+.form-password-title {
+  float: left;
+}
+
+.form-password-forgot {
+  float: right;
+}
+.form-control {
+  &:focus {
+    border-color: #84bc22;
+    box-shadow: none;
+  }
+}
+.password-texts {
+  margin-top: 30px;
+}
+
+.sign-in-text {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  color: Black;
+  font-size: 1.5rem;
+}
+.modal-content {
+  padding: 30px;
+}
+
+.login-form {
+  border-radius: 30px;
+  padding: 25px;
+}
+
+.text-muted {
+  margin-bottom: 30px;
 }
