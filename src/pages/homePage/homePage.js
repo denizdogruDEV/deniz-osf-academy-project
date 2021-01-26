@@ -60,9 +60,9 @@ function Homepage() {
           <h1 className="bannerosf-text">Banner OSF Themes</h1>
          
           <h3 className="bannerosf-text">
-            Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-            accusantium
+          Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium 
           </h3>
+          
           
         </div>
       </Container>

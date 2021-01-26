@@ -1,7 +1,7 @@
 import React from "react";
 import Card from "react-bootstrap/Card";
 import { Col } from "react-bootstrap";
-import "./cardCompStatic.css";
+import "./cardCompStatic.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUserClock } from "@fortawesome/free-solid-svg-icons";
 

@@ -1,67 +1,58 @@
-.gray-bg {
-    background-color: #f1edea;
-    padding-top: 10px;
-  }
-  
-  .white-bg {
-    background-color: white;
-    margin-top: 100px;
-  }
-  
-  //text
+.white-bg {
+  background-color: white;
+  margin-top: 100px;
+}
 
-  h1.countdown-headline {
-    font-size: 2rem;
-    text-align: center;
-    text-transform: initial;
-    font-weight: bold;
-  }
+//text
+
+h1.countdown-headline {
+  font-size: 2rem;
+  text-align: center;
+  text-transform: initial;
+  font-weight: bold;
+}
 
 .countdown-text {
-    text-align: center;
-    margin-bottom: 70px;
+  text-align: center;
+  margin-bottom: 70px;
 }
 div.discount-text {
-    justify-content: center;
+  justify-content: center;
 }
 
 //countdown comp
 
 div.countdown-wrapper {
-    width: 100%;
-    margin-bottom: 70px;
-  }
-
-  .countdown-text {
-    width: 500px;
-    text-align: center;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    p {
-      font-size: 0.8rem;
-      margin-bottom: 0px;
-    }
-  }
-
-  .countdown-item {
-    font-weight: bold;
+  width: 100%;
+  margin-bottom: 70px;
 }
-  
+
+.countdown-text {
+  width: 500px;
+  text-align: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  p {
+    font-size: 0.8rem;
+    margin-bottom: 0px;
+  }
+}
+
+.countdown-item {
+  font-weight: bold;
+}
+
 //submission button
 
-  .email-submission {
-    display: flex;
-    flex-direction: row;
-    border: 1px lightgray solid;
-    padding: 5px 5px 5px 15px;
-    border-radius: 50px;
-    width: 450px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 30px;
-  }
-
-
-
-
+.email-submission {
+  display: flex;
+  flex-direction: row;
+  border: 1px lightgray solid;
+  padding: 5px 5px 5px 15px;
+  border-radius: 50px;
+  width: 450px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+}

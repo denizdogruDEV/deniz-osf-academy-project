@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Card from "react-bootstrap/Card";
 import { Col, Button, Container } from "react-bootstrap";
-import "./servicesCards.css";
+import "./servicesCards.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPlus, faHeart } from "@fortawesome/free-solid-svg-icons";
 
@@ -36,7 +36,7 @@ const ServiceCards = () => {
         </Col>
       ))}
 
-      <div className="justify-center-buttons">
+      <div className="justify-center-buttons load-more-button">
         {visible < items.length && (
           <Button variant="success" onClick={showMoreItems}>
             Load More

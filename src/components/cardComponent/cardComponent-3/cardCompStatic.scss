@@ -6,6 +6,7 @@
   &:after {
     background-color: black;
   }
+
 }
 .overlay {
   position: absolute;
@@ -30,6 +31,7 @@
   font-size: 0.9rem;
   width: 50%;
   left: 10%;
+
 }
 
 .hour-ago {
@@ -38,4 +40,5 @@
 
 .green-icon {
   color: #84bc22;
+  margin-left: -25px;
 }

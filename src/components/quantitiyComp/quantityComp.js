@@ -1,71 +1,59 @@
 import React, { Component } from "react";
 import "./quantityComp.scss";
+
 export default class QuantityPicker extends Component {
   constructor(props) {
     super(props);
-
-    this.state = { value: this.props.min, disableDec: true, disableInc: false };
-    this.increment = this.increment.bind(this);
-    this.decrement = this.decrement.bind(this);
+    this.state = {
+      quantity: 1,
+      show: true,
+      max: 5,
+      min: 0,
+    };
   }
 
-  increment() {
-    const plusState = this.state.value + 1;
-    if (this.state.value < this.props.max) {
-      this.setState({ value: plusState });
-      this.setState({ disable: false });
-    }
-    if (this.state.value == this.props.max - 1) {
-      this.setState({ disableInc: true });
-    }
-    if (this.state.value == this.props.min) {
-      this.setState({ disableDec: false });
-    }
-  }
-
-  decrement() {
-    const minusState = this.state.value - 1;
-    if (this.state.value > this.props.min) {
-      this.setState({ value: minusState });
-      if (this.state.value == this.props.min + 1) {
-        this.setState({ disableDec: true });
+  IncrementItem = () => {
+    this.setState((prevState) => {
+      if (prevState.quantity < 999) {
+        return {
+          quantity: prevState.quantity + 1,
+        };
+      } else {
+        return null;
       }
-    } else {
-      this.setState({ value: this.props.min });
-    }
-    if (this.state.value == this.props.max) {
-      this.setState({ disableInc: false });
-    }
-  }
+    });
+  };
+  DecreaseItem = () => {
+    this.setState((prevState) => {
+      if (prevState.quantity > 0) {
+        return {
+          quantity: prevState.quantity - 1,
+        };
+      } else {
+        return null;
+      }
+    });
+  };
+  ToggleClick = () => {
+    this.setState({
+      show: !this.state.show,
+    });
+  };
+  handleChange = (event) => {
+    this.setState({ quantity: event.target.value });
+  };
 
   render() {
-    const { disableDec, disableInc } = this.state;
-
     return (
-      <span className="quantity-picker">
-        <button
-          className={`${
-            disableDec ? "mod-disable " : ""
-          }quantity-modifier modifier-left`}
-          onClick={this.decrement}
-        >
-          &ndash;
-        </button>
+      <div>
+        <button onClick={this.DecreaseItem}>-</button>
         <input
-          className="quantity-display"
-          type="text"
-          value={this.state.value}
-          readOnly
+          className="inputne"
+          value={this.state.quantity}
+          onChange={this.handleChange}
         />
-        <button
-          className={`${
-            disableInc ? "mod-disable " : ""
-          }quantity-modifier modifier-right`}
-          onClick={this.increment}
-        >
-          &#xff0b;
-        </button>
-      </span>
+        <button onClick={this.IncrementItem}>+</button>
+      </div>
     );
   }
 }

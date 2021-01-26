@@ -4,6 +4,7 @@ import Breadcrumb from "react-bootstrap/Breadcrumb";
 import ServiceCards from "../../components/cardComponent/cardComponent-1/serviceCards";
 import FeaturedSlider from "../../components/featuredProductsComp/featuredProductsCompArray";
 import { Form } from "react-bootstrap";
+import InputGroup from "react-bootstrap/InputGroup";
 
 function Services() {
   return (
@@ -19,28 +20,34 @@ function Services() {
               <Breadcrumb.Item active>Category Landing Service</Breadcrumb.Item>
             </Breadcrumb>
           </div>
-          <h1 className="stripe-headline">Services</h1>
+          <h1 className="stripe-headline mixed-headline">Services</h1>
           <Container>
             <div className="white-bg-form">
-              <Row>
-                <Col>
-                  <Form.Label>Price</Form.Label>
+              <Row className="filters">
+                <Col md="1">
+                  <Form.Label>Price</Form.Label>{" "}
+                </Col>
+                <Col md="3">
                   <Form.Control as="select">
                     <option>0-10.000</option>
                     <option>10.000 - 50.000</option>
                     <option>50.000 - 100.000</option>
                   </Form.Control>
                 </Col>
-                <Col>
+                <Col md="1">
                   <Form.Label> Brands</Form.Label>
+                </Col>
+                <Col md="3">
                   <Form.Control as="select">
                     <option>Ukraine Sport</option>
                     <option>Turkey Tigers</option>
                     <option>Russian Dolls</option>
                   </Form.Control>
                 </Col>
-                <Col>
+                <Col md="1">
                   <Form.Label>Size</Form.Label>
+                </Col>
+                <Col md="3">
                   <Form.Control as="select">
                     <option>Small</option>
                     <option>Medium</option>
@@ -49,19 +56,64 @@ function Services() {
                   </Form.Control>
                 </Col>
               </Row>
-              <Row>
-                <Col>
-                  <Form.Label>Colors</Form.Label>
-                  <Form.Control as="select">
-                    <option>Black</option>
-                    <option>White</option>
-                    <option>Red</option>
-                    <option>Purple</option>
-                    <option>None</option>
-                  </Form.Control>
+              <Row className="filters">
+                <Col md="1">
+                  <Form.Label>Color</Form.Label>
                 </Col>
-                <Col>
+                <Col md="3">
+                  <input
+                    type="button"
+                    className="custom-colors"
+                    id="color1"
+                    name="colors"
+                  />
+                  <input
+                    type="button"
+                    className="custom-colors"
+                    id="color2"
+                    name="colors"
+                  />
+                  <input
+                    type="button"
+                    className="custom-colors"
+                    id="color3"
+                    name="colors"
+                  />
+                  <input
+                    type="button"
+                    className="custom-colors"
+                    id="color4"
+                    name="colors"
+                  />
+                  <input
+                    type="button"
+                    className="custom-colors"
+                    id="color5"
+                    name="colors"
+                  />
+                  <input
+                    type="button"
+                    className="custom-colors"
+                    id="color6"
+                    name="colors"
+                  />
+                  <input
+                    type="button"
+                    className="custom-colors"
+                    id="color7"
+                    name="colors"
+                  />
+                  <input
+                    type="button"
+                    className="custom-colors"
+                    id="color8"
+                    name="colors"
+                  />
+                </Col>
+                <Col md="1">
                   <Form.Label>Sort by</Form.Label>
+                </Col>
+                <Col md="3">
                   <Form.Control as="select">
                     <option>Price</option>
                     <option>Lowest Price</option>
@@ -69,17 +121,22 @@ function Services() {
                     <option>Top Seller</option>
                   </Form.Control>
                 </Col>
-                <Col>
+                <Col md="1">
                   <Form.Label>Show</Form.Label>
+                </Col>
+                <Col md="3">
                   <Form.Control as="select">
                     <option>16 per page</option>
-                    <option>32 per pagee</option>
+                    <option>32 per page</option>
                   </Form.Control>
                 </Col>
               </Row>
             </div>
           </Container>
         </Container>
+        <div className="text-center">
+          <h5 className="results">12,931 results in apparel</h5>
+        </div>
         <ServiceCards />
       </div>
 

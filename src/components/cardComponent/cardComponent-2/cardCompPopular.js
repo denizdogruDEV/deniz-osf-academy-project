@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Card from "react-bootstrap/Card";
 import { Col, Button, Container,Row } from "react-bootstrap";
-import "./cardCompPopular.css";
+import "./cardCompPopular.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPlus, faHeart, faRedoAlt } from "@fortawesome/free-solid-svg-icons";
 

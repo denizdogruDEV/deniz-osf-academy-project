@@ -45,10 +45,11 @@ div.diagonal-line:after {
   height: 150px;
 }
 .featured-card-category {
-  padding-top: 10px;
+  color: #84bc22;
+  font-weight: bold; 
 }
 .product-arrows {
-  display:flex;
+display:flex;
  float:center;
  justify-content:center;
  align-items: center;
@@ -58,7 +59,7 @@ div.diagonal-line:after {
 }
 
 .product-arrow {
-  background-color: black;
+  background-color:#2d353a;
   height: 30px;
   width: 30px;
   color: white;
@@ -66,12 +67,14 @@ div.diagonal-line:after {
   border: none;
   margin-right: 30px;
   margin-left: 30px;
+
 }
 
 .products-text {
   color: white;
   font-size: 1em;
   font-weight: regular;
+
 
 }
 

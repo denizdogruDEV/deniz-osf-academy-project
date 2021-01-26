@@ -4,6 +4,7 @@ import { Col } from "react-bootstrap";
 import { Container, Row, Button } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPlus, faHeart } from "@fortawesome/free-solid-svg-icons";
+import "./cardCompSingle.scss";
 
 // this component has been used for homepage popular items, default variation.
 
