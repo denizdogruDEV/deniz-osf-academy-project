@@ -1,40 +1,45 @@
-a.half-button.btn.btn-primary {
-    background: none;
-    padding: 8px 8px 5px 12px;
-    margin: 0;
-    left: 0;
-    display: flex;
-    color: black;
-    border-radius: 0px 10px 10px 0px;
-    border-color: gray;
-    border-left: none;
-    width: 100px;
-    position: sticky;
-    font-weight: bold;
-    &:focus {
-      box-shadow: none;
-    }
-    &:hover {
-      background-color: #24c36c;
-      color: white;
-    }
+.half-button.btn.btn-primary {
+  background: none;
+  padding: 8px 8px 3px 12px;
+  margin: 0;
+  left: 0;
+  display: flex;
+  color: #45413e;
+  border-radius: 0px 10px 10px 0px;
+  border-color: gray;
+  border-left: none;
+  width: 100px;
+  position: sticky;
+  font-weight: bold;
+  &:focus {
+    box-shadow: none;
+    background-color: #84bc22;
+    color: white;
   }
-  
-  div.dual-button {
-    display: flex;
-    flex-wrap: wrap;
-    text-align: center;
-    width: 200px;
+  &:active {
+    box-shadow: none;
+    background-color: #84bc22;
+    color: white;
   }
-  .half-text {
-    width: 100px;
-    border-radius: 10px 0px 0px 10px;
-    border: gray 1px solid;
-    padding: 10px 10px 5px 10px;
-    text-align: center;
-    color: #24c36c;
+  &:hover {
+    background-color: #84bc22;
+    color: white;
   }
-  
-  .card.product-card-single {
-      height: 373px;
-  }
+}
+
+div.dual-button {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  width: 200px;
+  margin-top: 10px;
+  margin-left: 8px;
+}
+.half-text {
+  width: 100px;
+  border-radius: 10px 0px 0px 10px;
+  border: gray 1px solid;
+  padding: 10px 10px 3px 10px;
+  text-align: center;
+  color: #24c36c;
+}

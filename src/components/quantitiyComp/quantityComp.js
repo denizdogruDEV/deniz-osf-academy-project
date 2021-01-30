@@ -14,7 +14,7 @@ export default class QuantityPicker extends Component {
 
   IncrementItem = () => {
     this.setState((prevState) => {
-      if (prevState.quantity < 999) {
+      if (prevState.quantity < 99) {
         return {
           quantity: prevState.quantity + 1,
         };

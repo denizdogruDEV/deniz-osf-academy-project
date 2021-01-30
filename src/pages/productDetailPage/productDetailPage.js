@@ -5,7 +5,7 @@ import TabComp from "../../components/tabComponent/tabComp";
 import MyGallery from "../../components/productimagegalleryComponent/imageGalleryComp";
 import "./productDetailPage.scss";
 import CardCompItem from "../../components/cardComponent/cardcompItem";
-import Form from "react-bootstrap/Form";
+import ReactReadMoreReadLess from "react-read-more-read-less";
 import QuantityPicker from "../../components/quantitiyComp/quantityComp";
 import LogoBanner from "../../components/logoBanner/logoBanner";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -15,6 +15,9 @@ import {
   faPinterestP,
   faTwitter,
 } from "@fortawesome/free-brands-svg-icons";
+import ColorPicker from "./colorPicker";
+const longText =
+  "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus fermentum venenatis pulvinar. Proin vitae lectus urna. Sed erat ipsum, maximus a elit nec, condimentum placerat ex. Ut tincidunt mi eget condimentum mollis. Pellentesque aliquam velit quis est varius, sed molestie dolor ultrices. Pellentesque eget dapibus eros, at blandit arcu. Duis id purus quis mi porttitor viverra vel tempus elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos posuere";
 
 function ProductDetail() {
   return (
@@ -50,26 +53,21 @@ function ProductDetail() {
               <Col xd="4">
                 <h1 className="pdp-title">$ 299</h1>
                 <div>
-                  <Form.Control className="pdp-form" as="select">
-                    <option>Dary Gray</option>
-                    <option>Red</option>
-                    <option>Blue</option>
-                  </Form.Control>
+                  <ColorPicker />
                 </div>
                 <div className="quantity-button">
                   <QuantityPicker min={0} max={4} />
                   <Button className="green add-to-cart">Add to Cart</Button>
                 </div>
-                <div style={{ marginTop: "30px" }}>
-                  <p>
-                    Sed ut perspiciatis unde omnis iste natus error sit
-                    voluptatem accusantium doloremque laudantium, totam rem
-                    aperiam, eaque ipsa quae ab illo inventore Beatae vitae
-                    dicta sunt explicabo. Nemo enim ipsam voluptatem quia
-                    voluptas
-                  </p>
-                  <span style={{ color: "#84bc22" }}>Read More</span>
-                </div>
+                <ReactReadMoreReadLess
+                  charLimit={100}
+                  readMoreText={"Read more "}
+                  readLessText={"Read less"}
+                  readMoreClassName="read-more-less--more"
+                  readLessClassName="read-more-less--less"
+                >
+                  {longText}
+                </ReactReadMoreReadLess>
                 <div className="socials-icons-set">
                   <h6 style={{ fontSize: "0.8rem", color: "lightgray" }}>
                     Share

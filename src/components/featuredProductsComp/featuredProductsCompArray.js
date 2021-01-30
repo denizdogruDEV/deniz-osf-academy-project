@@ -7,9 +7,8 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faChevronRight,
   faChevronLeft,
-  faPlus,
-  faHeart,
 } from "@fortawesome/free-solid-svg-icons";
+import { Link } from "react-router-dom";
 
 function FeaturedSlider() {
   let slider;
@@ -87,23 +86,22 @@ function FeaturedSlider() {
           <Slider ref={(c) => (slider = c)} {...settings}>
             {suggestions.map((current) => (
               <div>
-                <Card className="featured-cards-item green-hover">
-                  <Card.Img
-                    className="featured-card-images"
-                    src={current.image}
-                  />
+                <Card className="featured-cards-item">
+                  <Link to="/productdetail">
+                    <Card.Img
+                      className="featured-card-images"
+                      src={current.image}
+                    />
+                  </Link>
                   <Card.Body className="services-cards-body">
-                    <Card.Title className="services-cards-headline">
+                    <Card.Title
+                      as="a"
+                      href="/productdetail"
+                      className="services-cards-headline"
+                    >
                       {current.maintitle}
                     </Card.Title>
-                    <div className="hover-buttons">
-                      <Button className="add-buttons">
-                        <FontAwesomeIcon icon={faPlus} />{" "}
-                      </Button>
-                      <Button className="add-buttons red">
-                        <FontAwesomeIcon icon={faHeart} />
-                      </Button>
-                    </div>
+
                     <Card.Text className="featured-card-category">
                       {current.category}
                     </Card.Text>

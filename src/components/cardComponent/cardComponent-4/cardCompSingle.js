@@ -17,25 +17,26 @@ class CardCompSingle extends React.Component {
           <Card.Img
             className="
             popular-image-card"
+            href="/productdetail"
             src={require("../../../../public/items/" + image + ".jpg")}
           />
           <Card.Body>
-            <Card.Title>{maintitle}</Card.Title>
+            <Card.Title as="a" href="/productdetail">
+              {maintitle}
+            </Card.Title>
             <div className="hover-buttons">
-                <Button className="add-buttons">
-                  <FontAwesomeIcon icon={faPlus} />{" "}
-                </Button>
-                <Button className="add-buttons red">
-                  <FontAwesomeIcon icon={faHeart} />
-                </Button>
-              </div>
+              <Button className="add-buttons">
+                <FontAwesomeIcon icon={faPlus} />{" "}
+              </Button>
+              <Button className="add-buttons red">
+                <FontAwesomeIcon icon={faHeart} />
+              </Button>
+            </div>
             <div className="dual-button">
               <div className="half-text">
                 <h5 className="green-text">$659.55</h5>
               </div>
-              <Button className="half-button" href="/productdetail">
-                BUY NOW
-              </Button>
+              <Button className="half-button">BUY NOW</Button>
             </div>
           </Card.Body>
         </Card>

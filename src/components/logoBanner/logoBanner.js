@@ -1,16 +1,6 @@
 import React from "react";
 import { Container, Row, Col, Button } from "react-bootstrap";
 
-// const Styles = styled.div`
-//   h2 {
-//     color: white;
-//     font-weight: bold;
-//     font-size: 1.1rem;
-//   }
-
-//   p {
-//     color: #868380;
-
 function LogoBanner() {
   return (
     <Container>
