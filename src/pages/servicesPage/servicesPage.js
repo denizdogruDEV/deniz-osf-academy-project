@@ -1,12 +1,15 @@
-import React from "react";
+import React, { useState } from "react";
 import { Container, Row, Col, Button } from "react-bootstrap";
 import Breadcrumb from "react-bootstrap/Breadcrumb";
 import ServiceCards from "../../components/cardComponent/cardComponent-1/serviceCards";
 import FeaturedSlider from "../../components/featuredProductsComp/featuredProductsCompArray";
 import { Form } from "react-bootstrap";
-import InputGroup from "react-bootstrap/InputGroup";
 
 function Services() {
+  const [background, setBackground] = useState("#fdfdfd");
+  const setStyle = (background) => {
+    setBackground(background);
+  };
   return (
     <>
       <div className="gray-bg">
@@ -22,7 +25,7 @@ function Services() {
           </div>
           <h1 className="stripe-headline mixed-headline">Services</h1>
           <Container>
-            <div className="white-bg-form">
+            <div className="white-bg-form" style={{ background }}>
               <Row className="filters">
                 <Col md="1">
                   <Form.Label>Price</Form.Label>{" "}
@@ -62,48 +65,56 @@ function Services() {
                 </Col>
                 <Col md="3">
                   <input
+                    onClick={() => setStyle("white")}
                     type="button"
                     className="custom-colors"
                     id="color1"
                     name="colors"
                   />
                   <input
+                    onClick={() => setStyle("#43c0cf")}
                     type="button"
                     className="custom-colors"
                     id="color2"
                     name="colors"
                   />
                   <input
+                    onClick={() => setStyle("#3d402f")}
                     type="button"
                     className="custom-colors"
                     id="color3"
                     name="colors"
                   />
                   <input
+                    onClick={() => setStyle("#4aaf00")}
                     type="button"
                     className="custom-colors"
                     id="color4"
                     name="colors"
                   />
                   <input
+                    onClick={() => setStyle("#315bbd")}
                     type="button"
                     className="custom-colors"
                     id="color5"
                     name="colors"
                   />
                   <input
+                    onClick={() => setStyle("#ec6115")}
                     type="button"
                     className="custom-colors"
                     id="color6"
                     name="colors"
                   />
                   <input
+                    onClick={() => setStyle("#dc041d")}
                     type="button"
                     className="custom-colors"
                     id="color7"
                     name="colors"
                   />
                   <input
+                    onClick={() => setStyle("#efead7")}
                     type="button"
                     className="custom-colors"
                     id="color8"

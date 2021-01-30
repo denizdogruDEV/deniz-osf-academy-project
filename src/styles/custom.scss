@@ -517,7 +517,9 @@ select.form-control {
   margin: 5px;
   &:focus {
     border-radius: 50%;
-    border: 1px solid black;
+    border: none;
+    outline: none;
+    box-shadow: 0 0 3pt 2pt rgba(0, 0, 0, 0.377);
   }
 }
 #color1 {
@@ -525,25 +527,25 @@ select.form-control {
   border: 1px solid gray;
 }
 #color2 {
-  background-color: teal;
+  background-color: #43c0cf;
 }
 #color3 {
-  background-color: black;
+  background-color: #3d402f;
 }
 #color4 {
-  background-color: green;
+  background-color: #4aaf00;
 }
 #color5 {
-  background-color: purple;
+  background-color: #315bbd;
 }
 #color6 {
-  background-color: orangered;
+  background-color: #ec6115;
 }
 #color7 {
-  background-color: red;
+  background-color: #dc041d;
 }
 #color8 {
-  background-color: beige;
+  background-color: #efead7;
 }
 
 .white-bg-form {
