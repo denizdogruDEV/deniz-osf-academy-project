@@ -39,7 +39,6 @@ div.diagonal-line:after {
 }
 .featured-card-images {
   object-fit: cover;
-  height: 150px;
 }
 .featured-card-category {
   color: #84bc22;
@@ -79,8 +78,7 @@ h1.white-headline {
 a.service-cards-headline {
   color: black;
   text-decoration: none;
-  font-size: 0.8rem;
-  line-height: 0.8rem;
+
   &:hover {
     color: green;
     text-decoration: none;

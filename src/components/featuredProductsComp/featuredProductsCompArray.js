@@ -32,12 +32,13 @@ function FeaturedSlider() {
   };
   var settings = {
     infinite: true,
-    speed: 3000,
+    speed: 4000,
     arrows: false,
     slidesToShow: 4,
     slidesToScroll: 4,
     autoplay: true,
     autplayspeed: 5000,
+    useTransform: false,
 
     responsive: [
       {
