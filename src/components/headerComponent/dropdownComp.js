@@ -64,6 +64,7 @@ export default function DropdownComp() {
               <img
                 src={require("../../assets/images/nav_img.jpg")}
                 width="250px"
+                height="280px"
               />
             </div>
           </Col>

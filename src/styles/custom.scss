@@ -350,8 +350,15 @@ h4 {
   color: white;
   font-size: 1rem;
   font-weight: 900;
+  width: 200px;
+  padding-left: 22px;
 }
-
+.dropdown-box {
+  img {
+    object-fit: cover;
+    border-radius: 5px;
+  }
+}
 li {
   color: white;
   font-size: 1rem;
@@ -360,7 +367,7 @@ img.d-block.w-100 {
   border-radius: 10px;
 }
 .no-category {
-  margin-top: 25px;
+  margin-top: 30px;
 }
 
 .dropdown-item {
@@ -396,7 +403,9 @@ p.card-text {
   text-align: center;
   font-size: 0.9rem;
 }
-
+.hover-buttons {
+  display: flex;
+}
 .card.green-hover {
   &:hover {
     &:after {
@@ -430,11 +439,25 @@ img.card-img.featured-card-images {
 
 button.add-buttons {
   background-color: white;
-  color: black;
+  color: #32c777;
   border-color: white;
+  font-size: 2rem;
+  padding: 15px 25px;
+  border-radius: 50%;
+  margin: 15px;
   &:hover {
-    background-color: black;
+    background-color: #32c777;
     border-color: white;
+  }
+  &:focus {
+    background-color: #32c777 !important;
+    border-color: white !important;
+    box-shadow: none !important;
+  }
+  &:active {
+    background-color: #32c777 !important;
+    border-color: white !important;
+    box-shadow: none !important;
   }
 }
 
@@ -446,6 +469,22 @@ button.add-buttons.red.btn.btn-primary {
     background-color: red;
     color: white;
     border-color: white;
+  }
+  &:hover {
+    background-color: red;
+    border-color: white;
+  }
+  &:focus {
+    background-color: red !important;
+    border-color: white !important;
+    box-shadow: none !important;
+    color: white;
+  }
+  &:active {
+    background-color: red !important;
+    border-color: white !important;
+    box-shadow: none !important;
+    color: white;
   }
 }
 
@@ -498,10 +537,11 @@ h1.stripe-headline.mixed-headline:after {
 
 select.form-control {
   border-radius: 30px;
-  border: 1px gray solid;
+  border: 2px lightgray solid;
   padding-top: 5px;
+
   &:focus {
-    border-color: gray;
+    border-color: lightgray;
   }
 }
 
