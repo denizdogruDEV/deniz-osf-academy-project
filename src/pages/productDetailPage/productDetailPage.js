@@ -38,7 +38,7 @@ function ProductDetail() {
               </Breadcrumb.Item>
             </Breadcrumb>
           </div>
-          <h1 className="fourofour product-detail">
+          <h1 className="stripe-headline product-detail">
             Archi Desk Accessory Pen Cup
           </h1>
         </Container>
