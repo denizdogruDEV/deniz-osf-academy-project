@@ -48,6 +48,7 @@ export default class QuantityPicker extends Component {
       <div>
         <button onClick={this.DecreaseItem}>-</button>
         <input
+          type="number"
           className="inputne"
           value={this.state.quantity}
           onChange={this.handleChange}

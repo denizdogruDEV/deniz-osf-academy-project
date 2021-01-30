@@ -681,3 +681,27 @@ span.dark-gray.dot {
   padding: 3px 12px;
   background-color: gray;
 }
+
+// product detail page
+
+.image-gallery-thumbnail {
+  opacity: 0.6;
+  border: none;
+
+  &:hover {
+    border: none;
+  }
+}
+.image-gallery-fullscreen-button {
+  top: 0%;
+  left: 0;
+  bottom: 100%;
+}
+.image-gallery-thumbnail.active {
+  border: none;
+  opacity: 1;
+}
+.image-gallery-slide-wrapper.right {
+  padding-right: 40px;
+  left: -15px;
+}
