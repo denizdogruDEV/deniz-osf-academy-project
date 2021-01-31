@@ -114,12 +114,14 @@ function Navigationbar({}) {
               <span className="favorite-count">1</span>
             </div>
             <div className="navbar-icon-set">
-              <FontAwesomeIcon
-                icon={faShoppingBag}
-                size="lg"
-                className="icon-upload"
-              />
-              <span className="favorite-count">1</span>
+              <Link to="/cart">
+                <FontAwesomeIcon
+                  icon={faShoppingBag}
+                  size="lg"
+                  className="icon-upload"
+                />
+                <span className="favorite-count">1</span>
+              </Link>
             </div>
           </Navbar.Collapse>
         </Navbar>

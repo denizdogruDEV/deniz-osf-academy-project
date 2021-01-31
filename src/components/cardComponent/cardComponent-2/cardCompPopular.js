@@ -20,6 +20,7 @@ const PopularLoadMore = () => {
       .then((res) => res.json())
       .then((data) => setitems(data));
   }, []);
+
   return (
     <div>
       <Row>

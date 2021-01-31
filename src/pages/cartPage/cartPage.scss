@@ -1,0 +1,125 @@
+#cartContent {
+  width: 85%;
+  min-width: 300px;
+  background: white;
+  margin: 0 auto;
+  padding: 15px;
+}
+.cart-wrapper {
+  border-bottom: 1.25px solid #e8e2d6;
+}
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 100px;
+}
+.delete {
+  justify-content: end;
+}
+.cart-main-title {
+  width: 400px;
+}
+.black-box {
+  height: 100px;
+  width: 100px;
+  background-color: lightgray;
+  margin-right: -20px;
+}
+.cart-input {
+  width: 20px;
+  text-align: center;
+  border: none;
+  border-radius: 30px;
+}
+.cart-buttons {
+  border: 2px #e8e2d6 solid;
+  border-radius: 30px;
+  padding: 5px;
+}
+.price-small {
+  color: lightgray;
+  font-weight: bold;
+}
+button.cart-controls {
+  border-radius: 30px;
+  &:focus {
+    outline: none;
+  }
+}
+.cart-controls {
+  border: none;
+  background-color: white;
+}
+.cart-total {
+  text-align: right;
+  margin: 15px 10px;
+}
+.delete {
+  border: 2px #e8e2d6 solid;
+  border-radius: 50%;
+  padding: 3px;
+}
+.cart-title {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.price-total {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+@media only screen and (min-width: 1000px) {
+  #cartContent {
+    min-width: 500px;
+  }
+}
+
+.cart-controls svg {
+  width: 17px;
+  height: 17px;
+  text-align: center;
+  vertical-align: middle;
+  color: gray;
+}
+.cart-total {
+  font-size: 2.5rem;
+  font-weight: bolder;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-right: 50px;
+  h3 {
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-right: 100px;
+  }
+}
+
+.checkout {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+input.coupon {
+  width: 200px;
+  padding: 20px;
+  border-radius: 30px;
+  margin-right: 10px;
+}
+button.checkout-button.btn.btn-primary {
+  background-color: white;
+  border: 2px solid #84bc22;
+  border-radius: 30px;
+  color: #84bc22;
+  padding: 5px 40px;
+}
+button.green.add-to-cart.checkout.btn.btn-primary {
+  border-color: #84bc22;
+  margin-top: 0px;
+  padding: 6px 40px;
+}
+.checkout-left {
+  display: flex;
+}
