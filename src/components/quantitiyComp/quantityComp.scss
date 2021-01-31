@@ -1,67 +1,21 @@
 .quantity-picker {
-  display: inline-block;
-  border: 1px solid #dfdfdf;
-  border-radius: 10px;
-  vertical-align: middle;
-  margin-top: 30px;
-  margin-bottom: 30px;
-}
-.quantity-input:focus {
-  background: red;
-}
+  display: flex;
+  margin-bottom: 40px;
+  input {
+    width: 50px;
+    border: none;
+    justify-content: center;
+  }
+  button {
+    border: none;
+    background-color: white;
+    color: black;
+  }
 
-.quantity-modifier,
-.quantity-display {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  outline: none;
-}
-
-.quantity-modifier {
-  height: 100%;
-  width: 2rem;
-  font-size: 1.5rem;
-  background: white;
-  color: #888;
-  border: 0 solid white;
-  border-radius: 5px;
-  text-align: center;
-  cursor: pointer;
-}
-.quantity-modifier:hover {
-  background: #84bc22;
-  color: white;
-}
-
-.quantity-modifier:focus {
-  outline: 0;
-}
-
-.left-modifier {
-  border-radius: 3px 0 0 3px;
-}
-
-.mod-disable {
-  color: #e0e0e0;
-}
-
-.mod-disable:hover {
-  background-color: #84bc22 !important;
-  color: #e0e0e0;
-}
-
-.right-modifier {
-  border-radius: 0 3px 3px 0;
-}
-
-.quantity-display {
-  width: 4rem;
-  padding: 0.5rem;
-  font-size: 1.5rem;
-  border: 0;
-  border-top: 0 solid #dbdbdb;
-  border-bottom: 0 solid #dbdbdb;
-  text-align: center;
+  .quantity-form {
+    border: 2px lightgray solid;
+    border-radius: 30px;
+    justify-items: center;
+    padding: 5px 8px;
+  }
 }

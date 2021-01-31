@@ -15,10 +15,33 @@
 .pdp-page {
   background-color: white;
   border-radius: 10px 10px 0px 0px;
+  padding-right: 50px;
 }
 .tab-pdp {
   .nav-tabs {
     background: white;
     justify-content: center;
   }
+}
+h1.pdp-title {
+  font-weight: 800;
+  color: #262a32;
+  margin-bottom: 30px;
+}
+.color-picker {
+  display: flex;
+  justify-items: center;
+  border: 2px lightgray solid;
+  border-radius: 30px;
+  padding-left: 10px;
+  width: 180px;
+  margin-bottom: 20px;
+}
+.change-dot {
+  width: 25px;
+  height: 25px;
+  margin-right: 10px;
+  background-color: black;
+  border-radius: 50%;
+  margin-top: 8px;
 }

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Container, Row, Col, Button } from "react-bootstrap";
 import Breadcrumb from "react-bootstrap/Breadcrumb";
 import MyGallery from "../../components/productimagegalleryComponent/imageGalleryComp";
@@ -9,6 +9,8 @@ import CardCompItem from "../../components/cardComponent/cardcompItem";
 import ReactReadMoreReadLess from "react-read-more-read-less";
 import QuantityPicker from "../../components/quantitiyComp/quantityComp";
 import LogoBanner from "../../components/logoBanner/logoBanner";
+import DropdownButton from "react-bootstrap/DropdownButton";
+import Dropdown from "react-bootstrap/Dropdown";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faFacebookF,
@@ -16,11 +18,18 @@ import {
   faPinterestP,
   faTwitter,
 } from "@fortawesome/free-brands-svg-icons";
-import ColorPicker from "./colorPicker";
 const longText =
-  "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus fermentum venenatis pulvinar. Proin vitae lectus urna. Sed erat ipsum, maximus a elit nec, condimentum placerat ex. Ut tincidunt mi eget condimentum mollis. Pellentesque aliquam velit quis est varius, sed molestie dolor ultrices. Pellentesque eget dapibus eros, at blandit arcu. Duis id purus quis mi porttitor viverra vel tempus elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos posuere";
+  "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus fermentum venenatis pulvinar. Proin vitae lectus urna. Sed erat ipsum, maximus a elit nec, condimentum placerat ex. Ut tincidunt mi eget condimentum mollis. Pellentesque aliquam velit quis est varius, sed molestie dolor ultrices. Pellentesque eget dapibus eros, at blandit arcu. Duis id purus quis mi porttitor viverra vel tempus elit.";
 
 function ProductDetail() {
+  const [background, setBackground] = useState("white");
+
+  const [title, setTitle] = useState("Select a Color");
+  const setStyle = (background, title) => {
+    setBackground(background);
+    setTitle(title);
+  };
+
   return (
     <>
       <div className="gray-bg">
@@ -52,14 +61,43 @@ function ProductDetail() {
                 </div>
               </Col>
               <Col xd="4">
-                <h1 className="pdp-title">$ 299</h1>
+                <h1 className="pdp-title">$ 299.99</h1>
                 <div>
-                  <ColorPicker />
+                  <div className="App">
+                    <header className="App-header"></header>
+                    <div className="color-picker">
+                      <span
+                        className="change-dot"
+                        style={{ background }}
+                      ></span>
+                      <DropdownButton
+                        id="pdp-select-color"
+                        className="format"
+                        title={title}
+                      >
+                        <Dropdown.Item
+                          onClick={() => setStyle("#b1e1d5", "Mint Green")}
+                          as="button"
+                        >
+                          <div>
+                            <span className="mint-green dot"></span> Mint Green
+                          </div>
+                        </Dropdown.Item>
+                        <Dropdown.Item
+                          as="button"
+                          onClick={() => setStyle("#585d61", "Dark Gray")}
+                        >
+                          <div>
+                            <span className="dark-gray dot"></span>Dark Gray
+                          </div>
+                        </Dropdown.Item>
+                      </DropdownButton>
+                    </div>
+                  </div>
                 </div>
-                <div className="quantity-button">
-                  <QuantityPicker min={0} max={4} />
-                  <Button className="green add-to-cart">Add to Cart</Button>
-                </div>
+
+                <QuantityPicker />
+
                 <ReactReadMoreReadLess
                   charLimit={100}
                   readMoreText={"Read more "}
@@ -70,9 +108,15 @@ function ProductDetail() {
                   {longText}
                 </ReactReadMoreReadLess>
                 <div className="socials-icons-set">
-                  <h6 style={{ fontSize: "0.8rem", color: "lightgray" }}>
+                  <span
+                    style={{
+                      fontSize: "0.8rem",
+                      color: "gray",
+                      paddingRight: "30px",
+                    }}
+                  >
                     Share
-                  </h6>
+                  </span>
                   <a
                     style={{ padding: "10px" }}
                     target="_blank"
@@ -80,7 +124,7 @@ function ProductDetail() {
                   >
                     <FontAwesomeIcon
                       icon={faFacebookF}
-                      size="lg"
+                      size="md"
                       className="icon-upload"
                     />
                   </a>
@@ -92,7 +136,7 @@ function ProductDetail() {
                   >
                     <FontAwesomeIcon
                       icon={faGooglePlusG}
-                      size="lg"
+                      size="md"
                       className="icon-upload"
                     />
                   </a>
@@ -104,7 +148,7 @@ function ProductDetail() {
                   >
                     <FontAwesomeIcon
                       icon={faTwitter}
-                      size="lg"
+                      size="md"
                       className="icon-upload"
                     />
                   </a>
@@ -115,7 +159,7 @@ function ProductDetail() {
                   >
                     <FontAwesomeIcon
                       icon={faPinterestP}
-                      size="lg"
+                      size="md"
                       className="icon-upload"
                     />
                   </a>
@@ -130,85 +174,91 @@ function ProductDetail() {
                 eventKey="description"
                 title="Description"
               >
-                <Row>
-                  <Col>
-                    <p>
-                      ultricies nec, pellentesque eu, pretium quis, sem. Nulla
-                      consequat massa quis enim. Donec pede justo, fringilla
-                      vel, aliquet nec, vulputate eget, arcu.
-                    </p>
-                    <p>
-                      Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-                      Aenean commodo ligula eget dolor. Aenean massa.
-                    </p>
-                  </Col>
-                  <Col>
-                    <p>
-                      Aenean commodo ligula eget dolor. Aenean massa. Cum sociis
-                      natoque penatibus et magnis dis parturient montes,
-                      nascetur ridiculus mus.
-                    </p>
-                    <p>
-                      Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-                      Aenean commodo ligula eget dolor. Aenean massa.
-                    </p>
-                  </Col>
-                </Row>
+                <div className="tab-content">
+                  <Row>
+                    <Col>
+                      <p>
+                        ultricies nec, pellentesque eu, pretium quis, sem. Nulla
+                        consequat massa quis enim. Donec pede justo, fringilla
+                        vel, aliquet nec, vulputate eget, arcu.
+                      </p>
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetuer adipiscing
+                        elit. Aenean commodo ligula eget dolor. Aenean massa.
+                      </p>
+                    </Col>
+                    <Col>
+                      <p>
+                        Aenean commodo ligula eget dolor. Aenean massa. Cum
+                        sociis natoque penatibus et magnis dis parturient
+                        montes, nascetur ridiculus mus.
+                      </p>
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetuer adipiscing
+                        elit. Aenean commodo ligula eget dolor. Aenean massa.
+                      </p>
+                    </Col>
+                  </Row>
+                </div>
               </Tab>
               <Tab
                 className="tab-pdp"
                 eventKey="additional-information"
                 title="Additional Information"
               >
-                <Row>
-                  <Col>
-                    <p>
-                      Cum sociis natoque penatibus et magnis dis parturient
-                      montes, nascetur ridiculus mus. Donec quam felis,
-                    </p>
-                    <p>
-                      Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-                      Aenean commodo ligula eget dolor. Aenean massa.
-                    </p>
-                  </Col>
-                  <Col>
-                    <p>
-                      Cum sociis natoque penatibus et magnis dis parturient
-                      montes, nascetur ridiculus mus. Donec quam felis,
-                    </p>
-                    <p>
-                      Aenean commodo ligula eget dolor. Aenean massa. Cum sociis
-                      natoque penatibus et magnis dis parturient montes,
-                      nascetur ridiculus mus.
-                    </p>
-                  </Col>
-                </Row>
+                <div className="tab-content">
+                  <Row>
+                    <Col>
+                      <p>
+                        Cum sociis natoque penatibus et magnis dis parturient
+                        montes, nascetur ridiculus mus. Donec quam felis,
+                      </p>
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetuer adipiscing
+                        elit. Aenean commodo ligula eget dolor. Aenean massa.
+                      </p>
+                    </Col>
+                    <Col>
+                      <p>
+                        Cum sociis natoque penatibus et magnis dis parturient
+                        montes, nascetur ridiculus mus. Donec quam felis,
+                      </p>
+                      <p>
+                        Aenean commodo ligula eget dolor. Aenean massa. Cum
+                        sociis natoque penatibus et magnis dis parturient
+                        montes, nascetur ridiculus mus.
+                      </p>
+                    </Col>
+                  </Row>
+                </div>
               </Tab>
               <Tab className="tab-pdp" eventKey="reviews" title="Reviews(3)">
-                <Row>
-                  <Col>
-                    <p>
-                      Aenean commodo ligula eget dolor. Aenean massa. Cum sociis
-                      natoque penatibus et magnis dis parturient montes,
-                      nascetur ridiculus mus.
-                    </p>
-                    <p>
-                      Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-                      Aenean commodo ligula eget dolor. Aenean massa.
-                    </p>
-                  </Col>
-                  <Col>
-                    <p>
-                      Cum sociis natoque penatibus et magnis dis parturient
-                      montes, nascetur ridiculus mus. Donec quam felis,
-                    </p>
-                    <p>
-                      ultricies nec, pellentesque eu, pretium quis, sem. Nulla
-                      consequat massa quis enim. Donec pede justo, fringilla
-                      vel, aliquet nec, vulputate eget, arcu.
-                    </p>
-                  </Col>
-                </Row>
+                <div className="tab-content">
+                  <Row>
+                    <Col>
+                      <p>
+                        Aenean commodo ligula eget dolor. Aenean massa. Cum
+                        sociis natoque penatibus et magnis dis parturient
+                        montes, nascetur ridiculus mus.
+                      </p>
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetuer adipiscing
+                        elit. Aenean commodo ligula eget dolor. Aenean massa.
+                      </p>
+                    </Col>
+                    <Col>
+                      <p>
+                        Cum sociis natoque penatibus et magnis dis parturient
+                        montes, nascetur ridiculus mus. Donec quam felis,
+                      </p>
+                      <p>
+                        ultricies nec, pellentesque eu, pretium quis, sem. Nulla
+                        consequat massa quis enim. Donec pede justo, fringilla
+                        vel, aliquet nec, vulputate eget, arcu.
+                      </p>
+                    </Col>
+                  </Row>
+                </div>
               </Tab>
             </Tabs>
           </div>

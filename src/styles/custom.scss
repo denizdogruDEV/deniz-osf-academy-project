@@ -699,19 +699,19 @@ p.featured-card-category.card-text {
 span.mint-green.dot {
   border-radius: 50%;
   padding: 3px 12px;
-  background-color: green;
+  background-color: #b1e1d5;
 }
 span.dark-gray.dot {
   border-radius: 50%;
   padding: 3px 12px;
-  background-color: gray;
+  background-color: #585d61;
 }
 
 // product detail page
 
 .image-gallery-thumbnail {
   opacity: 0.6;
-  border: none;
+  border: 1px darkgray solid;
   margin-bottom: 20px;
 
   &:hover {
@@ -725,9 +725,93 @@ span.dark-gray.dot {
 }
 
 .image-gallery-thumbnail.active {
-  border: none;
+  border: #84bc22 2px solid;
   opacity: 1;
 }
 .image-gallery-slide-wrapper.right {
   padding-right: 40px;
+}
+
+button#pdp-select-color {
+  color: #262a32;
+  background-color: white;
+  border: none;
+  text-transform: initial;
+  width: 100px;
+  padding-left: 0px;
+  padding-right: 10px;
+  &:focus {
+    outline: none;
+    border-color: lightgray;
+    box-shadow: none;
+  }
+  &:active {
+    outline: none;
+    border-color: lightgray;
+    box-shadow: none;
+  }
+}
+button#pdp-select-color.dropdown-toggle:after {
+  position: relative;
+  right: -10px;
+}
+
+h1.stripe-headline.product-detail {
+  margin-top: 10px;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  display: none;
+}
+button.green.add-to-cart.btn.btn-primary {
+  background-color: #84bc22;
+  color: white;
+  padding: 5px 40px;
+}
+
+input.inputne {
+  text-align: center;
+}
+.socials-icons-set {
+  margin-top: 30px;
+  .icon-upload {
+    color: gray;
+  }
+}
+span.read-more-less--more {
+  color: #84bc22;
+}
+span.read-more-less--less {
+  color: #84bc22;
+}
+
+.tab-pdp {
+  a.nav-item.nav-link {
+    font-size: 1.2rem;
+    padding: 10px 30px 5px 30px;
+    &:hover {
+      background-color: white;
+      border-bottom: 0px;
+      border-color: white;
+      box-shadow: none;
+      color: #84bc22;
+    }
+  }
+  a.nav-item.nav-link.active {
+    background-color: #262a33;
+    color: white;
+    border-bottom: 1px #262a33;
+    border-radius: 10px 10px 0px 0px;
+    &:hover {
+      box-shadow: none;
+      outline: none;
+    }
+  }
+}
+.tab-content {
+  background-color: #262a33;
+  color: white;
+  padding: 30px;
+  border-radius: 0px 0px 10px 10px;
 }
