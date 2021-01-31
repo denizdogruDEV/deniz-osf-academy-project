@@ -19,7 +19,7 @@ import {
   faTwitter,
 } from "@fortawesome/free-brands-svg-icons";
 const longText =
-  "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus fermentum venenatis pulvinar. Proin vitae lectus urna. Sed erat ipsum, maximus a elit nec, condimentum placerat ex. Ut tincidunt mi eget condimentum mollis. Pellentesque aliquam velit quis est varius, sed molestie dolor ultrices. Pellentesque eget dapibus eros, at blandit arcu. Duis id purus quis mi porttitor viverra vel tempus elit.";
+  "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus fermentum venenatis pulvinar. Proin vitae lectus urna. Sed erat ipsum, maximus a elit nec, condimentum placerat ex. Ut tincidunt mi eget condimentum mollis. Pellentesque aliquam velit quis est varius. ";
 
 function ProductDetail() {
   const [background, setBackground] = useState("white");
@@ -55,12 +55,12 @@ function ProductDetail() {
         <Container>
           <div className="pdp-page">
             <Row>
-              <Col xl="8">
+              <Col xl="8" md="8">
                 <div className="pdp-gallery">
                   <MyGallery />
                 </div>
               </Col>
-              <Col xd="4">
+              <Col xl="4" md="4">
                 <h1 className="pdp-title">$ 299.99</h1>
                 <div>
                   <div className="App">
@@ -109,6 +109,16 @@ function ProductDetail() {
                 >
                   {longText}
                 </ReactReadMoreReadLess>
+                <div className="print">
+                  {" "}
+                  <Button
+                    className="green add-to-cart print"
+                    onClick={window.print}
+                  >
+                    Print
+                  </Button>
+                </div>
+
                 <div className="socials-icons-set">
                   <span
                     style={{
