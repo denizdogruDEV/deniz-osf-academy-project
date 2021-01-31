@@ -111,6 +111,7 @@ function Navigationbar({}) {
                 size="lg"
                 className="icon-upload"
               />
+              <span className="favorite-count">1</span>
             </div>
             <div className="navbar-icon-set">
               <FontAwesomeIcon
@@ -118,7 +119,7 @@ function Navigationbar({}) {
                 size="lg"
                 className="icon-upload"
               />
-              <span></span>
+              <span className="favorite-count">1</span>
             </div>
           </Navbar.Collapse>
         </Navbar>

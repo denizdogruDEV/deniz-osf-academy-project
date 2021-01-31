@@ -244,7 +244,7 @@ function ProductDetail() {
                   </Row>
                 </div>
               </Tab>
-              <Tab className="tab-pdp" eventKey="reviews" title="Reviews(3)">
+              <Tab className="tab-pdp" eventKey="reviews" title="Reviews (3)">
                 <div className="tab-content">
                   <Row>
                     <Col>
