@@ -1,12 +1,11 @@
 .pink-overlay-image {
-  height: 360px;
+  height: 375px;
   object-fit: cover;
   border-radius: 10px;
 
   &:after {
     background-color: black;
   }
-
 }
 .overlay {
   position: absolute;
@@ -31,7 +30,6 @@
   font-size: 0.9rem;
   width: 50%;
   left: 10%;
-
 }
 
 .hour-ago {

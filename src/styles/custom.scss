@@ -82,6 +82,8 @@ ul li a:hover {
     color: #84bc22;
     font-size: 1rem;
     font-weight: 900;
+    width: 300px;
+    margin-left: -20px;
   }
   p {
     color: darkgray;
@@ -107,6 +109,14 @@ ul li a:hover {
   p {
     margin-bottom: -20px;
   }
+}
+button#rcc-decline-button {
+  position: absolute;
+  right: 0px;
+  top: -10px;
+
+  background: none !important;
+  color: rgba(0, 0, 0, 0.37) !important;
 }
 
 //logo banner
@@ -432,6 +442,7 @@ img.card-img.popular-item-images {
 }
 img.card-img.popular-image-card {
   height: 250px;
+  z-index: 0;
 }
 img.card-img.featured-card-images {
   height: 150px;

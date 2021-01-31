@@ -11,6 +11,11 @@ export default function CookieComp() {
         location="bottom"
         buttonText="ACCEPT"
         cookieName="myAwesomeCookieName2"
+        enableDeclineButton
+        flipButtons
+        declineButtonText="X"
+        cookieValue={true}
+        declineCookieValue={true}
         style={{ background: "white", borderRadius: "10px" }}
         buttonStyle={{
           background: "#84bc22",

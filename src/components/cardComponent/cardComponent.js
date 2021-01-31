@@ -32,11 +32,13 @@ function CardComp() {
           subtitle="$ 129.55"
           image="3"
         />
-        <Col lg="3" md="6" className="item-hover">
+        <Col lg="3" md="6">
           <Card classname="green-hover">
             <Card.Img src={popularitemd} className="popular-image-card" />
             <Card.Body>
-              <Card.Title className="double-line">Cocktail Table Walnut </Card.Title>
+              <Card.Title className="double-line">
+                Cocktail Table Walnut{" "}
+              </Card.Title>
               <Card.Title>| YES </Card.Title>
               <Card.Text>$ 299.99</Card.Text>
               <div className="hover-buttons">
@@ -70,9 +72,8 @@ function CardComp() {
 
         <CardCompStatic image="static-item" />
       </Row>
-     
-        <PopularLoadMore />
-  
+
+      <PopularLoadMore />
     </>
   );
 }
