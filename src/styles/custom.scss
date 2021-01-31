@@ -316,6 +316,16 @@ a.dropdown-item {
 button.btn.btn-secondary.disabled {
   background-color: white;
   border: none;
+  &:focus {
+    background-color: white;
+    outline: none;
+    box-shadow: none;
+  }
+  &:active {
+    background-color: white;
+    outline: none;
+    box-shadow: none;
+  }
 }
 .btn-secondary {
   padding: 0;
@@ -622,7 +632,11 @@ select.form-control {
     padding: 10px 60px;
   }
 }
-
+body.modal-open {
+  padding-right: 0 !important;
+  padding-left: 0 !important;
+  overflow-y: scroll !important;
+}
 p.green {
   color: #84bc22;
   margin-bottom: -1rem;
