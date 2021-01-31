@@ -712,6 +712,7 @@ span.dark-gray.dot {
 .image-gallery-thumbnail {
   opacity: 0.6;
   border: none;
+  margin-bottom: 20px;
 
   &:hover {
     border: none;
@@ -722,11 +723,11 @@ span.dark-gray.dot {
   left: 0;
   bottom: 100%;
 }
+
 .image-gallery-thumbnail.active {
   border: none;
   opacity: 1;
 }
 .image-gallery-slide-wrapper.right {
   padding-right: 40px;
-  left: -15px;
 }

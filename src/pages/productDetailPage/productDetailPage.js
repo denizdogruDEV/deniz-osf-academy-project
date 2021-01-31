@@ -1,9 +1,10 @@
 import React from "react";
 import { Container, Row, Col, Button } from "react-bootstrap";
 import Breadcrumb from "react-bootstrap/Breadcrumb";
-import TabComp from "../../components/tabComponent/tabComp";
 import MyGallery from "../../components/productimagegalleryComponent/imageGalleryComp";
 import "./productDetailPage.scss";
+import Tabs from "react-bootstrap/Tabs";
+import Tab from "react-bootstrap/Tab";
 import CardCompItem from "../../components/cardComponent/cardcompItem";
 import ReactReadMoreReadLess from "react-read-more-read-less";
 import QuantityPicker from "../../components/quantitiyComp/quantityComp";
@@ -121,14 +122,99 @@ function ProductDetail() {
                 </div>
               </Col>
             </Row>
-
-            <div>
-              <TabComp />
-            </div>
+          </div>
+          <div className="tab-pdp">
+            <Tabs className="tab-pdp" defaultActiveKey="description">
+              <Tab
+                className="tab-pdp"
+                eventKey="description"
+                title="Description"
+              >
+                <Row>
+                  <Col>
+                    <p>
+                      ultricies nec, pellentesque eu, pretium quis, sem. Nulla
+                      consequat massa quis enim. Donec pede justo, fringilla
+                      vel, aliquet nec, vulputate eget, arcu.
+                    </p>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                      Aenean commodo ligula eget dolor. Aenean massa.
+                    </p>
+                  </Col>
+                  <Col>
+                    <p>
+                      Aenean commodo ligula eget dolor. Aenean massa. Cum sociis
+                      natoque penatibus et magnis dis parturient montes,
+                      nascetur ridiculus mus.
+                    </p>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                      Aenean commodo ligula eget dolor. Aenean massa.
+                    </p>
+                  </Col>
+                </Row>
+              </Tab>
+              <Tab
+                className="tab-pdp"
+                eventKey="additional-information"
+                title="Additional Information"
+              >
+                <Row>
+                  <Col>
+                    <p>
+                      Cum sociis natoque penatibus et magnis dis parturient
+                      montes, nascetur ridiculus mus. Donec quam felis,
+                    </p>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                      Aenean commodo ligula eget dolor. Aenean massa.
+                    </p>
+                  </Col>
+                  <Col>
+                    <p>
+                      Cum sociis natoque penatibus et magnis dis parturient
+                      montes, nascetur ridiculus mus. Donec quam felis,
+                    </p>
+                    <p>
+                      Aenean commodo ligula eget dolor. Aenean massa. Cum sociis
+                      natoque penatibus et magnis dis parturient montes,
+                      nascetur ridiculus mus.
+                    </p>
+                  </Col>
+                </Row>
+              </Tab>
+              <Tab className="tab-pdp" eventKey="reviews" title="Reviews(3)">
+                <Row>
+                  <Col>
+                    <p>
+                      Aenean commodo ligula eget dolor. Aenean massa. Cum sociis
+                      natoque penatibus et magnis dis parturient montes,
+                      nascetur ridiculus mus.
+                    </p>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                      Aenean commodo ligula eget dolor. Aenean massa.
+                    </p>
+                  </Col>
+                  <Col>
+                    <p>
+                      Cum sociis natoque penatibus et magnis dis parturient
+                      montes, nascetur ridiculus mus. Donec quam felis,
+                    </p>
+                    <p>
+                      ultricies nec, pellentesque eu, pretium quis, sem. Nulla
+                      consequat massa quis enim. Donec pede justo, fringilla
+                      vel, aliquet nec, vulputate eget, arcu.
+                    </p>
+                  </Col>
+                </Row>
+              </Tab>
+            </Tabs>
           </div>
         </Container>
         <Container className="pdp-popular-items">
-          <h1 className="fourofour" style={{ fontSize: "1.5rem" }}>
+          <h1 className="stripe-headline" style={{ fontSize: "1.5rem" }}>
             Popular Items
           </h1>
           <Row>
