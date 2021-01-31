@@ -632,6 +632,53 @@ select.form-control {
     padding: 10px 60px;
   }
 }
+.sign-in-text {
+  width: 100%;
+  color: #262a33;
+}
+
+.login-form {
+  p {
+    padding-left: 15px;
+    font-weight: bold;
+  }
+  input.email-form {
+    width: 300px;
+    padding: 10px;
+    border: none;
+    border-radius: 30px;
+    &:focus {
+      border: none;
+      box-shadow: none;
+      outline: none;
+    }
+    &:active {
+      border: none;
+
+      box-shadow: none;
+      outline: none;
+    }
+  }
+  .pass-wrapper {
+    border: 2px gray solid;
+    border-radius: 30px;
+    padding: 5px;
+    margin-bottom: 35px;
+  }
+}
+.forgot {
+  display: flex;
+  justify-content: space-between;
+  p.green {
+    font-size: 0.8rem;
+  }
+}
+p.error {
+  margin-top: -30px;
+  color: gray;
+  font-weight: light;
+}
+
 body.modal-open {
   padding-right: 0 !important;
   padding-left: 0 !important;
@@ -642,13 +689,6 @@ p.green {
   margin-bottom: -1rem;
 }
 
-.form-password-title {
-  float: left;
-}
-
-.form-password-forgot {
-  float: right;
-}
 .form-control {
   &:focus {
     border-color: #84bc22;
@@ -696,17 +736,6 @@ p.featured-card-category.card-text {
   right: 0;
 }
 
-span.mint-green.dot {
-  border-radius: 50%;
-  padding: 3px 12px;
-  background-color: #b1e1d5;
-}
-span.dark-gray.dot {
-  border-radius: 50%;
-  padding: 3px 12px;
-  background-color: #585d61;
-}
-
 // product detail page
 
 .image-gallery-thumbnail {
@@ -718,6 +747,19 @@ span.dark-gray.dot {
     border: none;
   }
 }
+span.mint-green.dot {
+  border-radius: 50%;
+  padding: 3px 12px;
+  background-color: #b1e1d5;
+  margin-right: 5px;
+}
+span.dark-gray.dot {
+  border-radius: 50%;
+  padding: 3px 12px;
+  background-color: #585d61;
+  margin-right: 5px;
+}
+
 .image-gallery-fullscreen-button {
   top: 0%;
   left: 0;
@@ -731,7 +773,18 @@ span.dark-gray.dot {
 .image-gallery-slide-wrapper.right {
   padding-right: 40px;
 }
-
+button.color-picker.dropdown-item {
+  background-color: white;
+  color: black;
+  padding: 5px 0px 0px 10px;
+  width: 50px;
+}
+.color-picker {
+  .dropdown-menu.show {
+    background-color: white !important;
+    left: -35px !important;
+  }
+}
 button#pdp-select-color {
   color: #262a32;
   background-color: white;
@@ -769,9 +822,17 @@ button.green.add-to-cart.btn.btn-primary {
   color: white;
   padding: 5px 40px;
 }
-
+.quantity-picker button {
+  &:focus {
+    color: #84bc22;
+    outline: none;
+  }
+}
 input.inputne {
   text-align: center;
+  &:focus {
+    outline: none;
+  }
 }
 .socials-icons-set {
   margin-top: 30px;
@@ -814,49 +875,4 @@ span.read-more-less--less {
   color: white;
   padding: 30px;
   border-radius: 0px 0px 10px 10px;
-}
-.sign-in-text {
-  width: 100%;
-  color: #262a33;
-}
-
-.login-form {
-  p {
-    padding-left: 15px;
-    font-weight: bold;
-  }
-  input.email-form {
-    width: 300px;
-    padding: 10px;
-    border: none;
-    border-radius: 30px;
-    &:focus {
-      border: none;
-      box-shadow: none;
-      outline: none;
-    }
-    &:active {
-      border: none;
-
-      box-shadow: none;
-      outline: none;
-    }
-  }
-  .pass-wrapper {
-    border: 2px gray solid;
-    border-radius: 30px;
-    padding: 5px;
-    margin-bottom: 35px;
-  }
-}
-.forgot {
-  display: flex;
-  justify-content: space-between;
-  p.green {
-    font-size: 0.8rem;
-  }
-}
-p.error {
-  margin-top: -30px;
-  color: gray;
 }

@@ -66,7 +66,7 @@ function MyVerticallyCenteredModal(props) {
                   },
 
                   pattern: {
-                    pattern: /^0|[1-9]\d*$/,
+                    value: /^0|[1-9]\d*$/,
                     message:
                       "Password must contain 1 numeric, 1 uppercase letter, 1 special character",
                   },

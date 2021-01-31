@@ -76,6 +76,7 @@ function ProductDetail() {
                         title={title}
                       >
                         <Dropdown.Item
+                          className="color-picker"
                           onClick={() => setStyle("#b1e1d5", "Mint Green")}
                           as="button"
                         >
@@ -84,6 +85,7 @@ function ProductDetail() {
                           </div>
                         </Dropdown.Item>
                         <Dropdown.Item
+                          className="color-picker"
                           as="button"
                           onClick={() => setStyle("#585d61", "Dark Gray")}
                         >
