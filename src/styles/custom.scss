@@ -815,3 +815,48 @@ span.read-more-less--less {
   padding: 30px;
   border-radius: 0px 0px 10px 10px;
 }
+.sign-in-text {
+  width: 100%;
+  color: #262a33;
+}
+
+.login-form {
+  p {
+    padding-left: 15px;
+    font-weight: bold;
+  }
+  input.email-form {
+    width: 300px;
+    padding: 10px;
+    border: none;
+    border-radius: 30px;
+    &:focus {
+      border: none;
+      box-shadow: none;
+      outline: none;
+    }
+    &:active {
+      border: none;
+
+      box-shadow: none;
+      outline: none;
+    }
+  }
+  .pass-wrapper {
+    border: 2px gray solid;
+    border-radius: 30px;
+    padding: 5px;
+    margin-bottom: 35px;
+  }
+}
+.forgot {
+  display: flex;
+  justify-content: space-between;
+  p.green {
+    font-size: 0.8rem;
+  }
+}
+p.error {
+  margin-top: -30px;
+  color: gray;
+}
