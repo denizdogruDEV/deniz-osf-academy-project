@@ -13,24 +13,20 @@ export default function DropdownComp() {
     <div className="dropdown-box">
       <Container>
         <Row>
-          <Col>
-            <NavDropdown title="Product Categories" ClassName="mobile-dropdown">
-              <h4>PRODUCT CATEGORIES</h4>
+          <Col className="remove-mobile">
+            <h4>PRODUCT CATEGORIES</h4>
 
-              <NavDropdown.Item href="/notfound">Accessories</NavDropdown.Item>
-              <NavDropdown.Item href="/notfound">Alcohol</NavDropdown.Item>
-              <NavDropdown.Item href="/notfound">Art</NavDropdown.Item>
-              <NavDropdown.Item href="/notfound">Books</NavDropdown.Item>
-              <NavDropdown.Item href="/notfound">Drink</NavDropdown.Item>
-              <NavDropdown.Item href="/notfound">Electronics</NavDropdown.Item>
-              <NavDropdown.Item href="/notfound">
-                Flowers&Plants
-              </NavDropdown.Item>
-              <NavDropdown.Item href="/notfound">Food</NavDropdown.Item>
-            </NavDropdown>
+            <NavDropdown.Item href="/notfound">Accessories</NavDropdown.Item>
+            <NavDropdown.Item href="/notfound">Alcohol</NavDropdown.Item>
+            <NavDropdown.Item href="/notfound">Art</NavDropdown.Item>
+            <NavDropdown.Item href="/notfound">Books</NavDropdown.Item>
+            <NavDropdown.Item href="/notfound">Drink</NavDropdown.Item>
+            <NavDropdown.Item href="/notfound">Electronics</NavDropdown.Item>
+            <NavDropdown.Item href="/notfound">Flowers&Plants</NavDropdown.Item>
+            <NavDropdown.Item href="/notfound">Food</NavDropdown.Item>
           </Col>
           <Col>
-            <div className="no-category">
+            <div className="no-category remove-mobile">
               <NavDropdown.Item href="/notfound">Gadgets</NavDropdown.Item>
               <NavDropdown.Item href="/notfound">Garden</NavDropdown.Item>
               <NavDropdown.Item href="/notfound">Grocery</NavDropdown.Item>
@@ -42,7 +38,7 @@ export default function DropdownComp() {
             </div>
           </Col>
           <Col>
-            <div className="no-category">
+            <div className="no-category remove-mobile">
               <NavDropdown.Item href="/notfound">Motorcycle</NavDropdown.Item>
               <NavDropdown.Item href="/notfound">Movies</NavDropdown.Item>
               <NavDropdown.Item href="/notfound">Music</NavDropdown.Item>
@@ -55,19 +51,15 @@ export default function DropdownComp() {
           </Col>
 
           <Col>
-            <NavDropdown title="Sale" ClassName="mobile-dropdown">
-              <h4>SALE</h4>
-              <NavDropdown.Item href="/notfound">Accessories</NavDropdown.Item>
-              <NavDropdown.Item href="/notfound">Alcohol</NavDropdown.Item>
-              <NavDropdown.Item href="/notfound">Art</NavDropdown.Item>
-              <NavDropdown.Item href="/notfound">Books</NavDropdown.Item>
-              <NavDropdown.Item href="/notfound">Drink</NavDropdown.Item>
-              <NavDropdown.Item href="/notfound">Electronics</NavDropdown.Item>
-              <NavDropdown.Item href="/notfound">
-                Flowers&Plants
-              </NavDropdown.Item>
-              <NavDropdown.Item href="/notfound">Food</NavDropdown.Item>
-            </NavDropdown>
+            <h4>SALE</h4>
+            <NavDropdown.Item href="/notfound">Accessories</NavDropdown.Item>
+            <NavDropdown.Item href="/notfound">Alcohol</NavDropdown.Item>
+            <NavDropdown.Item href="/notfound">Art</NavDropdown.Item>
+            <NavDropdown.Item href="/notfound">Books</NavDropdown.Item>
+            <NavDropdown.Item href="/notfound">Drink</NavDropdown.Item>
+            <NavDropdown.Item href="/notfound">Electronics</NavDropdown.Item>
+            <NavDropdown.Item href="/notfound">Flowers&Plants</NavDropdown.Item>
+            <NavDropdown.Item href="/notfound">Food</NavDropdown.Item>
           </Col>
           <Col>
             <div className="header-image">
