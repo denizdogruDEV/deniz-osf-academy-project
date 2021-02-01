@@ -959,3 +959,151 @@ span.read-more-less--less {
     display: none;
   }
 }
+
+//responsive fixes with google dev tools
+@media (max-width: 768px) {
+  .brand-name-custom {
+    display: none;
+  }
+
+  .bdDYJz .navbar-icon-set {
+    display: inline-block;
+    width: 25%;
+    margin-top: 10px;
+  }
+  .dropdown-menu {
+    width: 100%;
+  }
+  .cuIYFB .dropdown-box {
+    width: 100%;
+    left: 0;
+    top: 0 !important;
+    height: 210px;
+    overflow-y: auto;
+  }
+  .dropdown-box .col {
+    width: 100%;
+    flex: inherit;
+  }
+  .darkbackground {
+    overflow: hidden;
+  }
+  .navbar-brand {
+    margin-left: -20px;
+  }
+  .navbar-collapse {
+    background-color: #262a33;
+    color: white;
+    width: 120%;
+  }
+  .bdDYJz .navbar {
+    height: 100px !important;
+  }
+  .navbar-toggler {
+    border: none;
+    &:focus {
+      outline: none;
+    }
+  }
+  .navbar {
+    padding: 0;
+    margin-right: -15px;
+    margin-left: -15px;
+  }
+  #en-menu {
+    display: none;
+  }
+  #us-menu {
+    display: none;
+  }
+  .navbar-icon-set {
+    display: none;
+  }
+  a.nav-link {
+    color: white;
+    &:hover {
+      box-shadow: none;
+    }
+  }
+  a.services-menu-dropdown.toggle.nav-link {
+    box-shadow: none;
+    &:focus {
+      box-shadow: none;
+    }
+    &:hover {
+      box-shadow: none;
+    }
+  }
+  .dropdown-box {
+    right: 0px;
+    left: 0px;
+    position: absolute;
+    margin-left: -10px;
+    padding: 0;
+    top: -10px;
+    h4 {
+      display: none;
+    }
+    .no-category {
+      display: none;
+    }
+  }
+  .header-image {
+    padding-bottom: 20px;
+    img {
+      width: 290px;
+    }
+  }
+  .carousel {
+    height: 450px;
+    img {
+      height: 450px;
+      object-fit: cover;
+    }
+    h3 {
+      font-size: 1.5rem;
+      margin-bottom: -100px;
+    }
+  }
+  img.discount {
+    display: none;
+  }
+  .followtext {
+    display: none;
+  }
+  .facebook-button {
+    display: none;
+  }
+  .bannerosf {
+    height: 180px;
+    h3 {
+      width: 100%;
+    }
+  }
+  h1.bannerosf-text {
+    font-size: 1.7rem;
+  }
+  h1.white-headline {
+    display: none;
+  }
+  h3.products-text {
+    display: none;
+  }
+  .product-arrows {
+    display: none;
+  }
+  .featured-container {
+    display: none;
+  }
+  .remove-mobile {
+    display: none;
+  }
+  .logo-banner {
+    padding: 10px;
+  }
+}
+@media (min-width: 768px) {
+  .remove-desktop {
+    display: none;
+  }
+}

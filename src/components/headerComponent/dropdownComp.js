@@ -14,15 +14,20 @@ export default function DropdownComp() {
       <Container>
         <Row>
           <Col>
-            <h4>PRODUCT CATEGORIES</h4>
-            <NavDropdown.Item href="/notfound">Accessories</NavDropdown.Item>
-            <NavDropdown.Item href="/notfound">Alcohol</NavDropdown.Item>
-            <NavDropdown.Item href="/notfound">Art</NavDropdown.Item>
-            <NavDropdown.Item href="/notfound">Books</NavDropdown.Item>
-            <NavDropdown.Item href="/notfound">Drink</NavDropdown.Item>
-            <NavDropdown.Item href="/notfound">Electronics</NavDropdown.Item>
-            <NavDropdown.Item href="/notfound">Flowers&Plants</NavDropdown.Item>
-            <NavDropdown.Item href="/notfound">Food</NavDropdown.Item>
+            <NavDropdown title="Product Categories" ClassName="mobile-dropdown">
+              <h4>PRODUCT CATEGORIES</h4>
+
+              <NavDropdown.Item href="/notfound">Accessories</NavDropdown.Item>
+              <NavDropdown.Item href="/notfound">Alcohol</NavDropdown.Item>
+              <NavDropdown.Item href="/notfound">Art</NavDropdown.Item>
+              <NavDropdown.Item href="/notfound">Books</NavDropdown.Item>
+              <NavDropdown.Item href="/notfound">Drink</NavDropdown.Item>
+              <NavDropdown.Item href="/notfound">Electronics</NavDropdown.Item>
+              <NavDropdown.Item href="/notfound">
+                Flowers&Plants
+              </NavDropdown.Item>
+              <NavDropdown.Item href="/notfound">Food</NavDropdown.Item>
+            </NavDropdown>
           </Col>
           <Col>
             <div className="no-category">
@@ -48,19 +53,24 @@ export default function DropdownComp() {
               <NavDropdown.Item href="/notfound">Toys</NavDropdown.Item>
             </div>
           </Col>
+
           <Col>
-            <h4>SALE</h4>
-            <NavDropdown.Item href="/notfound">Accessories</NavDropdown.Item>
-            <NavDropdown.Item href="/notfound">Alcohol</NavDropdown.Item>
-            <NavDropdown.Item href="/notfound">Art</NavDropdown.Item>
-            <NavDropdown.Item href="/notfound">Books</NavDropdown.Item>
-            <NavDropdown.Item href="/notfound">Drink</NavDropdown.Item>
-            <NavDropdown.Item href="/notfound">Electronics</NavDropdown.Item>
-            <NavDropdown.Item href="/notfound">Flowers&Plants</NavDropdown.Item>
-            <NavDropdown.Item href="/notfound">Food</NavDropdown.Item>
+            <NavDropdown title="Sale" ClassName="mobile-dropdown">
+              <h4>SALE</h4>
+              <NavDropdown.Item href="/notfound">Accessories</NavDropdown.Item>
+              <NavDropdown.Item href="/notfound">Alcohol</NavDropdown.Item>
+              <NavDropdown.Item href="/notfound">Art</NavDropdown.Item>
+              <NavDropdown.Item href="/notfound">Books</NavDropdown.Item>
+              <NavDropdown.Item href="/notfound">Drink</NavDropdown.Item>
+              <NavDropdown.Item href="/notfound">Electronics</NavDropdown.Item>
+              <NavDropdown.Item href="/notfound">
+                Flowers&Plants
+              </NavDropdown.Item>
+              <NavDropdown.Item href="/notfound">Food</NavDropdown.Item>
+            </NavDropdown>
           </Col>
           <Col>
-            <div>
+            <div className="header-image">
               <img
                 src={require("../../assets/images/nav_img.jpg")}
                 width="250px"

@@ -29,6 +29,7 @@ function LogoBanner() {
               src={require("../../assets/images/arrows_icon.png")}
               width="60"
               height="60"
+              className="remove-mobile"
             />
 
             <div className="banner-text-logo">
@@ -39,6 +40,12 @@ function LogoBanner() {
                 business results and predictable costs
               </p>
             </div>
+            <img
+              className="  remove-desktop"
+              src={require("../../assets/images/arrows_icon.png")}
+              width="60"
+              height="60"
+            />
           </div>
         </Col>
         <Col md="4">

@@ -24,6 +24,7 @@ function Navigationbar({}) {
     <div className="dropdown-background">
       <Container>
         <Navbar collapseOnSelect expand="lg">
+          <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Brand href="/#home">
             <img
               src={Logo}
@@ -39,7 +40,7 @@ function Navigationbar({}) {
               <div className="brand-second">Academy</div>
             </Col>
           </Link>
-          <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+
           <Navbar.Collapse
             id="responsive-navbar-nav"
             className="justify-content-end"

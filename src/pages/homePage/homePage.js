@@ -65,7 +65,7 @@ function Homepage() {
           </h3>
         </div>
       </Container>
-      <div className="darkbackground">
+      <div className="darkbackground remove-mobile">
         <Container>
           <FeaturedSlider />
         </Container>
