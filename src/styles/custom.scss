@@ -1140,8 +1140,48 @@ span.read-more-less--less {
   .slick-dots li.slick-active button:before {
     color: white;
   }
+  .pdp-page {
+    margin-bottom: 20px;
+    padding-right: 0px !important;
+    padding-top: 20px;
+  }
+  h1.product-detail {
+    font-size: 1.5rem;
+    &:before {
+      background-color: #f1edea;
+    }
+    &:after {
+      background-color: #f1edea;
+    }
+  }
+  .quantity-picker {
+    display: block;
+  }
+  .quantity-form {
+    width: 50%;
+    margin-bottom: 20px;
+  }
+  button.green.add-to-cart.btn.btn-primary {
+    margin-left: 0px;
+  }
+  .pdp-page {
+    padding: 10px;
+  }
+  .print {
+    margin-left: 0px;
+  }
+  h5.contact {
+    margin-top: 30px;
+  }
+  h5.mail-link {
+    margin-top: 20px;
+  }
+  .footer-icons {
+    margin-left: 60px;
+    max-width: 50%;
+  }
 }
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   .remove-desktop {
     display: none;
   }

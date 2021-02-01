@@ -12,12 +12,14 @@ import LogoBanner from "../../components/logoBanner/logoBanner";
 import DropdownButton from "react-bootstrap/DropdownButton";
 import Dropdown from "react-bootstrap/Dropdown";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import MobileSlider from "../../components/mobileCarousel/mobileCarousel";
 import {
   faFacebookF,
   faGooglePlusG,
   faPinterestP,
   faTwitter,
 } from "@fortawesome/free-brands-svg-icons";
+import MyGalleryMobile from "../../components/productimagegalleryComponent/imageGalleryMobile";
 const longText =
   "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus fermentum venenatis pulvinar. Proin vitae lectus urna. Sed erat ipsum, maximus a elit nec, condimentum placerat ex. Ut tincidunt mi eget condimentum mollis. Pellentesque aliquam velit quis est varius. ";
 
@@ -54,9 +56,12 @@ function ProductDetail() {
         </Container>
         <Container>
           <div className="pdp-page">
+            <div className="pdp-gallery remove-desktop">
+              <MyGalleryMobile />
+            </div>
             <Row>
               <Col xl="8" md="8">
-                <div className="pdp-gallery">
+                <div className="pdp-gallery remove-mobile">
                   <MyGallery />
                 </div>
               </Col>
@@ -179,7 +184,7 @@ function ProductDetail() {
               </Col>
             </Row>
           </div>
-          <div className="tab-pdp">
+          <div className="tab-pdp remove-mobile">
             <Tabs className="tab-pdp" defaultActiveKey="description">
               <Tab
                 className="tab-pdp"
@@ -275,7 +280,10 @@ function ProductDetail() {
             </Tabs>
           </div>
         </Container>
-        <Container className="pdp-popular-items">
+        <div className="card-gallery remove-desktop">
+          <MobileSlider />
+        </div>
+        <Container className="pdp-popular-items remove-mobile">
           <h1 className="stripe-headline" style={{ fontSize: "1.5rem" }}>
             Popular Items
           </h1>

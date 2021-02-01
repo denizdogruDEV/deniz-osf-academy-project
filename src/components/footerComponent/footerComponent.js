@@ -11,7 +11,6 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 
 function Footer() {
- 
   const Mailto = ({ email, subject, body, children }) => {
     return (
       <a
@@ -24,17 +23,18 @@ function Footer() {
     );
   };
   return (
-  
     <Container>
-    
       <div className="footercontainer">
         <Row>
           <Col lg="2" md="6" xs="12">
-            <h5>
-              © Copyright <span>{new Date().getFullYear()}</span>
-              <p>All Rights Reserved.</p>
-            </h5>
-            <h5>
+            <div>
+              <h5>
+                © Copyright <span>{new Date().getFullYear()}</span>
+                <p>All Rights Reserved.</p>
+              </h5>
+            </div>
+
+            <h5 className="contact">
               <strong>CONTACT</strong>
             </h5>
             <h5>
@@ -53,7 +53,7 @@ function Footer() {
             <h5>
               <strong>CATEGORIES</strong>
             </h5>
-            <ul>
+            <ul className="remove-mobile">
               <li>
                 <Link to="/notfound">Alcohol</Link>
               </li>
@@ -72,7 +72,7 @@ function Footer() {
             </ul>
           </Col>
           <Col lg="2" md="6" xs="12">
-            <ul className="noheadline">
+            <ul className="noheadline remove-mobile">
               <li>
                 {" "}
                 <Link to="">Home</Link>
@@ -101,7 +101,7 @@ function Footer() {
             </ul>
           </Col>
           <Col lg="2" md="6" xs="12">
-            <ul className="noheadline">
+            <ul className="noheadline remove-mobile ">
               <li>
                 <Link to="/notfound">Sport</Link>
               </li>
@@ -120,7 +120,7 @@ function Footer() {
             <h5>
               <strong>ABOUT</strong>
             </h5>
-            <ul>
+            <ul className="remove-mobile">
               <li>
                 <Link to="/notfound">About us</Link>
               </li>
@@ -175,10 +175,7 @@ function Footer() {
           </Col>
         </Row>
       </div>
-   
     </Container>
- 
-  
   );
 }
 
