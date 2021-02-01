@@ -1180,6 +1180,29 @@ span.read-more-less--less {
     margin-left: 60px;
     max-width: 50%;
   }
+  .sorry-text {
+    display: block;
+  }
+  .mark-bg {
+    img {
+      width: 60%;
+    }
+  }
+  .sorry-paragraph {
+    p {
+      padding-bottom: 40px;
+    }
+  }
+
+  .countdown-text {
+    width: 200px;
+  }
+  .email-submission {
+    width: 200px;
+  }
+  .countdown-item {
+    margin-bottom: 50px;
+  }
 }
 @media (min-width: 992px) {
   .remove-desktop {
