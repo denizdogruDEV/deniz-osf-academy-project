@@ -8,6 +8,7 @@ import "./homePage.scss";
 import CardComp from "../../components/cardComponent/cardComponent";
 import LogoBanner from "../../components/logoBanner/logoBanner";
 import FeaturedSlider from "../../components/featuredProductsComp/featuredProductsCompArray";
+import MobileSlider from "../../components/mobileCarousel/mobileCarousel";
 
 function Homepage() {
   return (
@@ -50,8 +51,11 @@ function Homepage() {
           <div className="title">
             <h2 className="stripe-headline white-headline">Popular Items</h2>
           </div>
-          <div className="card-gallery">
+          <div className="card-gallery remove-mobile">
             <CardComp />
+          </div>
+          <div className="card-gallery remove-desktop">
+            <MobileSlider />
           </div>
         </Container>
       </div>
